@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Test 56.0" />
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Test 56.0">
+      <change beforePath="$PROJECT_DIR$/Details2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details2.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +19,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -53,7 +56,7 @@
       <updated>1680182277535</updated>
       <workItem from="1680182279013" duration="1482000" />
       <workItem from="1680265739182" duration="2576000" />
-      <workItem from="1680268980722" duration="2029000" />
+      <workItem from="1680268980722" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -90,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680270948778</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test 56.0">
+      <created>1680271061841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680271061841</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +117,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Rene" />
+                        <option value="Rene" />
                       </list>
                     </value>
                   </entry>
