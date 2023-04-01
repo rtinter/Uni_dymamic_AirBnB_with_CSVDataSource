@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Bildtext und Entdecken Button&#10;Transition effekte Button und Navbar">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +77,8 @@
       <workItem from="1680282824691" duration="11198000" />
       <workItem from="1680330908989" duration="20287000" />
       <workItem from="1680353953157" duration="422000" />
-      <workItem from="1680364831798" duration="4807000" />
+      <workItem from="1680364831798" duration="4849000" />
+      <workItem from="1680369696342" duration="567000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -141,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680369212323</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hover effekt über der Bildergalerie @homepage">
+      <created>1680369682518</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680369682518</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +187,7 @@
     <MESSAGE value="Überschrift etc." />
     <MESSAGE value="redesign Homepage&#10;+&#10;Navbar integriert" />
     <MESSAGE value="Bildtext und Entdecken Button&#10;Transition effekte Button und Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bildtext und Entdecken Button&#10;Transition effekte Button und Navbar" />
+    <MESSAGE value="hover effekt über der Bildergalerie @homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="hover effekt über der Bildergalerie @homepage" />
   </component>
 </project>
