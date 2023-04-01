@@ -33,12 +33,19 @@ nav{
     margin:0 25px;
 }
 
+.nav_links li:hover{
+    text-decoration: underline;
+    text-decoration-color: #fd7f00;
+    transision: 0.15ms ease-in;
+}
+
 header{
     border: 1px solid silver;
     border-radius: 0 0 20px 20px;
 }
 
 /* Mittelteil, Bildergalerie etc. */
+
 section{
     width: 90%;
     margin: 5%;
@@ -85,6 +92,53 @@ section{
     margin: 10px;
     border-radius: 5px;
 }
+
+.hotel1 p{
+    position: absolute;
+    padding-top: 180px;
+    padding-left: 30px;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+.hotel2 p{
+    position: absolute;
+    padding-top: 180px;
+    padding-left: 30px;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+.hotel3 p{
+    position: absolute;
+    padding-top: 180px;
+    padding-left: 30px;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+.hotel4 p{
+    position: absolute;
+    padding-top: 180px;
+    padding-left: 30px;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+.button{
+    margin-top: 1em;
+    background: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background-color: #fd7f00;
+    transition: 0.15s;
+}
+
 
 
 
