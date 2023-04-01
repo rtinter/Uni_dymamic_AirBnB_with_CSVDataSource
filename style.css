@@ -139,8 +139,10 @@ section{
     transition: 0.15s;
 }
 
-
-
+.bildergalerie >* :hover{
+    color: #fd7f00;
+    transition: 0.15s ease-in;
+}
 
 /* responsive */
 
