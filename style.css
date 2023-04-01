@@ -1,114 +1,116 @@
-* {
-    font-family: Roboto, Arial, sans-serif;
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Navbar */
 
-.col-1 {
-    width: 16.6%;
-}
-
-.col-2 {
-    width: 33.3%;
-}
-
-.col-3 {
-    width: 50%;
-}
-
-.col-4 {
-    width: 66.6%;
-}
-
-.col-5 {
-    width: 83.3%;
-}
-
-.col-6 {
-    width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-    }
-
-    header,
-    aside,
-    footer {
-        text-align: center;
-    }
-}
-
-header {
-    text-align: center;
-    background-image: URL(https://wallpapercave.com/wp/wp2568544.jpg);
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
-
-footer {
-
-    margin-top: auto;
-    text-align: center;
-    background-image: URL(https://wallpapercave.com/wp/wp2568544.jpg);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    color: white;
-    background-position: bottom;
-}
-
-iframe {
-    padding: 5px;
-    max-width: 300px;
-    max-height: 300px;
-    width: 100%;
-    border: 0
-}
-
-table {
-    text-align: center;
-
-    border-collapse: collapse;
-
-}
-
-th {
-    background-color: aqua;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: bisque;
-}
-
-.container {
+.navbar{
+    top: 0;
+    left:0;
     display: flex;
     width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border: 1px dashed black;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.ueberschrift {
+ul{
+    list-style: none;
+}
+
+nav{
+    font-size: 20px;
+}
+
+.nav_links{
+    display: flex;
     align-items: center;
-    text-align: center;
-    align-content: center;
 }
 
-body {
-    min-height: 100vh;
+.nav_links li{
+    margin:0 25px;
+}
+
+header{
+    border: 1px solid silver;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Mittelteil, Bildergalerie etc. */
+section{
+    width: 90%;
+    margin: 5%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+.col{
+    width:40%;
+}
+
+.row h1{
+    font-size: 2em;
+}
+
+.row p{
+    font-size: small;
+}
+
+.col_image{
+    width:100%;
+}
+
+.bildergalerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bildergalerie img{
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width:850px){
+    .navbar {
+        padding:0;
+    }
+    .logo{
+        position: absolute;
+    }
+    .nav_links{
+        flex-direction: column;
+        width: 100%;
+        height:100%;
+        justify-content: center;
+    }
+    .nav_links li{
+        margin: 30px auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col img{
+        max-width:90%;
+    }
+}
+
