@@ -18,7 +18,7 @@ ________________________________________________________________________________
     padding: 20px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -31,11 +31,16 @@ nav{
     align-items: center;
 }
 
-.nav_links li{
+.nav_links a{
     margin:0 25px;
 }
 
-.nav_links li:hover{
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_links a:hover{
     text-decoration: underline;
     text-decoration-color: #fd7f00;
     transision: 0.15ms ease-in;
