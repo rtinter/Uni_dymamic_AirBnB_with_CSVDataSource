@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Navbar */
+/* Navbar
+__________________________________________________________________________________________________________
+*/
 
 .navbar{
     top: 0;
@@ -37,6 +39,7 @@ nav{
     text-decoration: underline;
     text-decoration-color: #fd7f00;
     transision: 0.15ms ease-in;
+    cursor: pointer;
 }
 
 header{
@@ -44,7 +47,9 @@ header{
     border-radius: 0 0 20px 20px;
 }
 
-/* Mittelteil, Bildergalerie etc. */
+/* Mittelteil, Bildergalerie etc.
+__________________________________________________________________________________________________________
+*/
 
 section{
     width: 90%;
@@ -145,7 +150,110 @@ section{
     transition: 0.15s ease-in;
 }
 
-/* responsive */
+/* Entdecken_Seite
+__________________________________________________________________________________________________________
+ */
+
+.entdecken h1{
+    margin-bottom: 1em;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+}
+
+.entdecken .row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.entdecken.row,.colums1,.colums2,.colums3,.colums4,.colums5,.colums6,.colums7,.colums8 {
+    flex-basis: 15%;
+    margin-bottom: 2em;
+}
+
+.entdecken .colums1 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+.entdecken .colums2 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.entdecken .colums3 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.entdecken .colums4 img{
+     height: 280px;
+     width: 300px;
+     margin: 5px;
+     border-radius: 5px;
+ }
+
+.entdecken .colums5 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.entdecken .colums5 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.entdecken .colums6 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.entdecken .colums7 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.entdecken .colums8 img{
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.entdecken .row > * {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+.entdecken .row h5 {
+    font-size: medium ;
+}
+.entdecken .row p {
+    font-size: small;
+}
+
+/* responsive
+__________________________________________________________________________________________________________
+*/
 
 @media only screen and (max-width:850px){
     .navbar {

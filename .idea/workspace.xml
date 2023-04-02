@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Entdecken.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -79,6 +80,7 @@
       <workItem from="1680353953157" duration="422000" />
       <workItem from="1680364831798" duration="4849000" />
       <workItem from="1680369696342" duration="567000" />
+      <workItem from="1680375729533" duration="8469000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
