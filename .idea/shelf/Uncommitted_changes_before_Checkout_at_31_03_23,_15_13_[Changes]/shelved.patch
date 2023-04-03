@@ -1,0 +1,40 @@
+Index: app.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>* {\n    font-family: Roboto, Arial, sans-serif;\n    box-sizing: border-box;\n}\n\n.row {\n    display: flex;\n    flex-wrap: wrap;\n}\n\n.col-1 {\n    width: 16.6%;\n}\n\n.col-2 {\n    width: 33.3%;\n}\n\n.col-3 {\n    width: 50%;\n}\n\n.col-4 {\n    width: 66.6%;\n}\n\n.col-5 {\n    width: 83.3%;\n}\n\n.col-6 {\n    width: 100%;\n}\n\n@media only screen and (max-width: 768px) {\n    [class*=\"col-\"] {\n        width: 100%;\n    }\n\n    header,\n    aside,\n    footer {\n        text-align: center;\n    }\n}\n\nheader {\n    text-align: center;\n    background-image: URL(https://wallpapercave.com/wp/wp2568544.jpg);\n    font-family: 'Courier New', Courier, monospace;\n    color: white;\n}\n\nfooter {\n\n    margin-top: auto;\n    text-align: center;\n    background-image: URL(https://wallpapercave.com/wp/wp2568544.jpg);\n    font-family: 'Courier New', Courier, monospace;\n    font-size: large;\n    color: white;\n    background-position: bottom;\n}\n\niframe {\n    padding: 5px;\n    max-width: 300px;\n    max-height: 300px;\n    width: 100%;\n    border: 0\n}\n\ntable {\n    text-align: center;\n\n    border-collapse: collapse;\n\n}\n\nth {\n    background-color: aqua;\n    border: 1px solid black;\n    border-collapse: collapse;\n}\n\ntd {\n    border: 1px solid black;\n    border-collapse: collapse;\n}\n\ntbody tr:nth-child(odd) {\n    background-color: bisque;\n}\n\n.container {\n    display: flex;\n    width: 100%;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    border: 1px dashed black;\n}\n\n.ueberschrift {\n    align-items: center;\n    text-align: center;\n    align-content: center;\n}\n\nbody {\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n}
+===================================================================
+diff --git a/app.css b/app.css
+--- a/app.css	
++++ b/app.css	
+@@ -46,11 +46,14 @@
+ 
+ header {
+     text-align: center;
+-    background-image: URL(https://wallpapercave.com/wp/wp2568544.jpg);
+     font-family: 'Courier New', Courier, monospace;
+     color: white;
+ }
+ 
++header {
++    background-image: URL(https://wallpapercave.com/wp/wp2568544.jpg);
++}
++
+ footer {
+ 
+     margin-top: auto;
+Index: Liste.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n<head class=\"Ferienwohnung\">\n    <link rel=\"stylesheet\" href=\"app.css\">\n    <style>\n        img {\n            width: 50px;\n        }\n    </style>\n</head>\n\n<body>\n<header>\n    <h1>AirBnB</h1>\n</header>\n    <div>\n        <h2 class=\"ueberschrift\">Liste der Ferienwohnungen</h2>\n    </div>\n\n\n    <table class=\"ueberschrift\">\n        <tr>\n            <th>Name der Ferienwohnung</th>\n            <th>Typ</th>\n            <th>Stadtteil</th>\n            <th>Preis pro Nacht</th>\n            <th>durchschnittliche Bewertung</th>\n            <th>anzahl der Bewertungen</th>\n            <th>Foto</th>\n            <th>Details</th>\n    </tr>\n    <tbody>\n    <tr>\n        <td>Bernd</td>\n        <td>Dachgeschosswohnung</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"https://cdn.fertighaus.de/images/roth-turmhaus_exterior1.max-1600x1200.watermarked.jpg?t=db2b162c\" alt=\"irgend son haus\"></td>\n        <td><a href=\"Details1.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Karl</td>\n        <td>Paterre</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"https://odis.homeaway.com/odis/listing/ba35c862-bdf7-484f-8ae5-62458dddd806.c10.jpg\" alt=\"irgend so ein anderes haus\"></td>\n        <td><a href=\"Details2.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Mausi</td>\n        <td>Strandhaus</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"\" alt=\"\"></td>\n        <td><a href=\"Fehler.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Heinz</td>\n        <td>Strandhaus</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"\" alt=\"\"></td>\n        <td><a href=\"Fehler.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Fred</td>\n        <td>2-Zimmer-Wohnung</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"\" alt=\"\"></td>\n        <td><a href=\"Fehler.html\">details</a></td>\n    </tr>\n    </tbody>\n    </table>\n    \n  <footer>\n    <p style=\"font-size: medium;\">AGBs und so</p>\n</footer>\n\n</body>\n\n\n</html>
+===================================================================
+diff --git a/Liste.html b/Liste.html
+--- a/Liste.html	
++++ b/Liste.html	
+@@ -1,5 +1,6 @@
+ <!DOCTYPE html>
+-<html>
++<html len="de">
++<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <head class="Ferienwohnung">
+     <link rel="stylesheet" href="app.css">
+     <style>

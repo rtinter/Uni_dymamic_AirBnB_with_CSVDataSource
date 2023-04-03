@@ -1,0 +1,18 @@
+Index: Liste.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n<head class=\"Ferienwohnung\">\n    <link rel=\"stylesheet\" href=\"app.css\">\n    <style>\n        img {\n            width: 50px;\n        }\n    </style>\n</head>\n<header>\n    <h1>AirBnB</h1>\n</header>\n<body>\n\n    <div>\n        <h2 class=\"ueberschrift\">Liste der Ferienwohnungen</h2>\n    </div>\n\n\n    <table class=\"ueberschrift\">\n        <tr>\n            <th>Name der Ferienwohnung</th>\n            <th>Typ</th>\n            <th>Stadtteil</th>\n            <th>Preis pro Nacht</th>\n            <th>durchschnittliche Bewertung</th>\n            <th>anzahl der Bewertungen</th>\n            <th>Foto</th>\n            <th>Details</th>\n    </tr>\n    <tbody>\n    <tr>\n        <td>Bernd</td>\n        <td>Dachgeschosswohnung</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"https://cdn.fertighaus.de/images/roth-turmhaus_exterior1.max-1600x1200.watermarked.jpg?t=db2b162c\" alt=\"irgend son haus\"></td>\n        <td><a href=\"Details1.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Karl</td>\n        <td>Paterre</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"https://odis.homeaway.com/odis/listing/ba35c862-bdf7-484f-8ae5-62458dddd806.c10.jpg\" alt=\"irgend so ein anderes haus\"></td>\n        <td><a href=\"Details2.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Mausi</td>\n        <td>Strandhaus</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"\" alt=\"\"></td>\n        <td><a href=\"Fehler.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Heinz</td>\n        <td>Strandhaus</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"\" alt=\"\"></td>\n        <td><a href=\"Fehler.html\">details</a></td>\n    </tr>\n    <tr>\n        <td>Fred</td>\n        <td>2-Zimmer-Wohnung</td>\n        <td>Gaarden</td>\n        <td>670€</td>\n        <td>4.5</td>\n        <td>13</td>\n        <td><img src=\"\" alt=\"\"></td>\n        <td><a href=\"Fehler.html\">details</a></td>\n    </tr>\n    </tbody>\n    </table>\n  \n\n</body>\n\n<footer>\n    <p style=\"font-size: medium;\">AGBs und so</p>\n</footer>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Liste.html b/Liste.html
+--- a/Liste.html	(revision 20d6be87a47c3744dd2a83e5be930ebe7fafd543)
++++ b/Liste.html	(date 1680183580374)
+@@ -1,5 +1,6 @@
+ <!DOCTYPE html>
+-<html>
++<html len="de">
++<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <head class="Ferienwohnung">
+     <link rel="stylesheet" href="app.css">
+     <style>
