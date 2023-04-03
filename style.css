@@ -43,7 +43,7 @@ ul li a{
 .nav_links a:hover{
     text-decoration: underline;
     text-decoration-color: #fd7f00;
-    transision: 0.15ms ease-in;
+    transition: 0.15ms ease-in;
     cursor: pointer;
 }
 
@@ -96,6 +96,7 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer;
+    max-width: 800px;
 }
 
 .bildergalerie img{
