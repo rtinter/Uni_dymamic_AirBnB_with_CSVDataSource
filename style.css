@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,9 +9,9 @@
 __________________________________________________________________________________________________________
 */
 
-.navbar{
+.navbar {
     top: 0;
-    left:0;
+    left: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -22,32 +22,32 @@ ul {
     list-style: none;
 }
 
-nav{
+nav {
     font-size: 20px;
 }
 
-.nav_links{
+.nav_links {
     display: flex;
     align-items: center;
 }
 
-.nav_links a{
-    margin:0 25px;
+.nav_links a {
+    margin: 0 25px;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: black;
 }
 
-.nav_links a:hover{
+.nav_links a:hover {
     text-decoration: underline;
     text-decoration-color: #fd7f00;
     transition: 0.15ms ease-in;
     cursor: pointer;
 }
 
-header{
+header {
     border: 1px solid silver;
     border-radius: 0 0 20px 20px;
 }
@@ -56,12 +56,12 @@ header{
 __________________________________________________________________________________________________________
 */
 
-section{
+section {
     width: 90%;
     margin: 5%;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     width: 100%;
@@ -74,24 +74,24 @@ section{
     align-items: center;
 }
 
-.col{
-    width:40%;
+.col {
+    width: 40%;
 }
 
-.row h1{
+.row h1 {
     font-size: 5em;
     font-family: 'Great Vibes', cursive;
 }
 
-.row p{
+.row p {
     font-size: small;
 }
 
-.col_image{
-    width:100%;
+.col_image {
+    width: 100%;
 }
 
-.bildergalerie{
+.bildergalerie {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,13 +99,13 @@ section{
     max-width: 800px;
 }
 
-.bildergalerie img{
+.bildergalerie img {
     width: 300px;
     margin: 10px;
     border-radius: 5px;
 }
 
-.hotel1 p{
+.hotel1 p {
     position: absolute;
     padding-top: 180px;
     padding-left: 30px;
@@ -113,7 +113,7 @@ section{
     font-size: 3vh;
 }
 
-.hotel2 p{
+.hotel2 p {
     position: absolute;
     padding-top: 180px;
     padding-left: 30px;
@@ -121,7 +121,7 @@ section{
     font-size: 3vh;
 }
 
-.hotel3 p{
+.hotel3 p {
     position: absolute;
     padding-top: 180px;
     padding-left: 30px;
@@ -129,7 +129,7 @@ section{
     font-size: 3vh;
 }
 
-.hotel4 p{
+.hotel4 p {
     position: absolute;
     padding-top: 180px;
     padding-left: 30px;
@@ -137,7 +137,7 @@ section{
     font-size: 3vh;
 }
 
-.button{
+.button {
     margin-top: 1em;
     background: black;
     padding: 8px 15px;
@@ -146,12 +146,12 @@ section{
     color: white;
 }
 
-.button:hover{
+.button:hover {
     background-color: #fd7f00;
     transition: 0.15s;
 }
 
-.bildergalerie >* :hover{
+.bildergalerie>* :hover {
     color: #fd7f00;
     transition: 0.15s ease-in;
 }
@@ -160,31 +160,32 @@ section{
 __________________________________________________________________________________________________________
  */
 
-.entdecken h1{
+.entdecken h1 {
     margin-bottom: 1em;
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
 }
 
-.entdecken .row{
-    display:flex;
-    flex-wrap:wrap;
+.entdecken .row {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.entdecken.row,.colums1,.colums2,.colums3,.colums4,.colums5,.colums6,.colums7,.colums8 {
+.entdecken.row,
+.colums1,
+.colums2,
+.colums3,
+.colums4,
+.colums5,
+.colums6,
+.colums7,
+.colums8 {
     flex-basis: 15%;
     margin-bottom: 2em;
 }
 
-.entdecken .colums1 img{
-    height: 280px;
-    width: 300px;
-    margin: 5px;
-    border-radius: 5px;
-
-}
-.entdecken .colums2 img{
+.entdecken .colums1 img {
     height: 280px;
     width: 300px;
     margin: 5px;
@@ -192,7 +193,7 @@ ________________________________________________________________________________
 
 }
 
-.entdecken .colums3 img{
+.entdecken .colums2 img {
     height: 280px;
     width: 300px;
     margin: 5px;
@@ -200,59 +201,68 @@ ________________________________________________________________________________
 
 }
 
-.entdecken .colums4 img{
-     height: 280px;
-     width: 300px;
-     margin: 5px;
-     border-radius: 5px;
- }
+.entdecken .colums3 img {
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
 
-.entdecken .colums5 img{
+}
+
+.entdecken .colums4 img {
     height: 280px;
     width: 300px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.entdecken .colums5 img{
+.entdecken .colums5 img {
     height: 280px;
     width: 300px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.entdecken .colums6 img{
+.entdecken .colums5 img {
     height: 280px;
     width: 300px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.entdecken .colums7 img{
+.entdecken .colums6 img {
     height: 280px;
     width: 300px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.entdecken .colums8 img{
+.entdecken .colums7 img {
     height: 280px;
     width: 300px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.entdecken .row > * {
-    display:flex;
+.entdecken .colums8 img {
+    height: 280px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.entdecken .row>* {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
 
 }
 
 .entdecken .row h5 {
-    font-size: medium ;
+    font-size: medium;
 }
+
 .entdecken .row p {
     font-size: small;
 }
@@ -261,14 +271,15 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________
  */
 
-.ueber h1{
+.ueber h1 {
     margin-bottom: 40px;
 }
 
-.ueber .col1{
+.ueber .col1 {
     margin-right: 30px;
 }
-.ueber .col2{
+
+.ueber .col2 {
     margin-left: 30px;
     max-width: 50%;
     border-left: solid;
@@ -276,29 +287,30 @@ ________________________________________________________________________________
 }
 
 
-.details p{
+.details p {
     font-size: small;
     margin: 20px;
 }
 
-.details h1{
+.details h1 {
     font-size: 25px;
     margin: 20px;
 }
 
-.details h2{
+.details h2 {
     font-size: 15px;
     margin: 20px;
 }
 
 
-.details .row{
-    display:flex;
+.details .row {
+    display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
-.col1,.col2{
+.col1,
+.col2 {
     display: flex;
     flex-basis: 100%;
     justify-content: center;
@@ -355,17 +367,17 @@ ________________________________________________________________________________
     color: #c73333;
 }
 
-.details{
+.details {
     width: 70%;
     margin: 80px auto;
 }
 
-.details iframe{
+.details iframe {
     height: 320px;
     width: 320px;
 }
 
-.details img{
+.details img {
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -423,27 +435,31 @@ footer {
 __________________________________________________________________________________________________________
 */
 
-@media only screen and (max-width:850px){
+@media only screen and (max-width:850px) {
     .navbar {
-        padding:0;
+        padding: 0;
     }
-    .logo{
+
+    .logo {
         position: absolute;
     }
-    .nav_links{
+
+    .nav_links {
         flex-direction: column;
         width: 100%;
-        height:100%;
+        height: 100%;
         justify-content: center;
     }
-    .nav_links li{
+
+    .nav_links li {
         margin: 30px auto;
     }
-    .row{
+
+    .row {
         flex-direction: column;
     }
-    .col img{
-        max-width:90%;
+
+    .col img {
+        max-width: 90%;
     }
 }
-
