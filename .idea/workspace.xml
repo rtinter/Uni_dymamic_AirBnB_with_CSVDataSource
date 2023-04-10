@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Malibu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23,_14_34_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23,_15_39_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23__14_34__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23__15_39__Changes_.xml" beforeDir="false" />
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="details, nav, bild, gruppierung maibu seite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Malibu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Malibu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,8 @@
       <workItem from="1680930000149" duration="51000" />
       <workItem from="1680973984736" duration="127000" />
       <workItem from="1681123653769" duration="632000" />
-      <workItem from="1681130300417" duration="5068000" />
+      <workItem from="1681130300417" duration="5146000" />
+      <workItem from="1681135462334" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -213,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680516445816</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="details, nav, bild, gruppierung maibu seite">
+      <created>1681135446108</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681135446108</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +257,7 @@
     <MESSAGE value="Entdecken Seite. &#10;Übernehmen der Nav-bar&#10;Flexbox, Bilddesign mit Bildern und Beschreibung&#10;Einfügen von Bewertungen unter den Bildern" />
     <MESSAGE value="Index mit Entdecken sowohl via button, als auch viele navbar verbunden" />
     <MESSAGE value="new main" />
-    <option name="LAST_COMMIT_MESSAGE" value="new main" />
+    <MESSAGE value="details, nav, bild, gruppierung maibu seite" />
+    <option name="LAST_COMMIT_MESSAGE" value="details, nav, bild, gruppierung maibu seite" />
   </component>
 </project>
