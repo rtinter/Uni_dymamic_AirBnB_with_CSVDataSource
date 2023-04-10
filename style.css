@@ -398,10 +398,18 @@ footer {
     padding-bottom: 10px;
 }
 
-.row {
-    display: flex;
-    justify-content: space-around;
+.anzeigebilder {
+    margin: 10px;
+    border-radius: 5px;
 }
+
+.rowfw {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 .col-1 {
     width: 16.6%;
