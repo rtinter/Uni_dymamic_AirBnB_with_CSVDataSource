@@ -257,6 +257,111 @@ ________________________________________________________________________________
     font-size: small;
 }
 
+/* Entdecken_Seite
+__________________________________________________________________________________________________________
+ */
+
+.details p{
+    font-size: small;
+    margin: 20px;
+}
+
+.details h1{
+    font-size: 25px;
+    margin: 20px;
+}
+
+.details h2{
+    font-size: 15px;
+    margin: 20px;
+}
+
+
+.details .row{
+    display:flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.col1,.col2{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.monat {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.monat h3 {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 24px;
+    color: #555;
+}
+
+.wochentage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+    padding: 5px;
+}
+
+.tage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tage div {
+    width: 13%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.verfuegbar {
+    cursor: pointer;
+}
+
+.nicht_verfuegbar {
+    cursor: not-allowed;
+    color: #c73333;
+}
+
+.details{
+    width: 70%;
+    margin: 80px auto;
+}
+
+.details iframe{
+    height: 320px;
+    width: 320px;
+}
+
+.details img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+
+
+
+
+
 /* responsive
 __________________________________________________________________________________________________________
 */

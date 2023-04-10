@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Index mit Entdecken sowohl via button, als auch viele navbar verbunden">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Malibu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23,_14_34_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23,_15_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23__14_34__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_23__15_39__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -24,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Rene" />
+        <entry key="$PROJECT_DIR$" value="class-redundanz" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +81,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4774d747-b46e-4d15-ba0a-bcaaabbf39df" name="Changes" comment="gitignore?" />
+      <changelist id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="" />
       <created>1680182277535</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -99,7 +104,16 @@
       <workItem from="1680454951703" duration="603000" />
       <workItem from="1680496996435" duration="42000" />
       <workItem from="1680497093404" duration="4800000" />
-      <workItem from="1680516293343" duration="130000" />
+      <workItem from="1680516293343" duration="477000" />
+      <workItem from="1680517818338" duration="21000" />
+      <workItem from="1680517882389" duration="48000" />
+      <workItem from="1680582295503" duration="120000" />
+      <workItem from="1680687800289" duration="722000" />
+      <workItem from="1680716725849" duration="1395000" />
+      <workItem from="1680930000149" duration="51000" />
+      <workItem from="1680973984736" duration="127000" />
+      <workItem from="1681123653769" duration="632000" />
+      <workItem from="1681130300417" duration="5068000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -192,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680512821395</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="new main">
+      <created>1680516445816</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680516445816</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +230,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Rene" />
+                        <option value="origin/Rene_newBranch" />
                       </list>
                     </value>
                   </entry>
@@ -232,6 +253,7 @@
     <MESSAGE value="hover effekt über der Bildergalerie @homepage" />
     <MESSAGE value="Entdecken Seite. &#10;Übernehmen der Nav-bar&#10;Flexbox, Bilddesign mit Bildern und Beschreibung&#10;Einfügen von Bewertungen unter den Bildern" />
     <MESSAGE value="Index mit Entdecken sowohl via button, als auch viele navbar verbunden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index mit Entdecken sowohl via button, als auch viele navbar verbunden" />
+    <MESSAGE value="new main" />
+    <option name="LAST_COMMIT_MESSAGE" value="new main" />
   </component>
 </project>
