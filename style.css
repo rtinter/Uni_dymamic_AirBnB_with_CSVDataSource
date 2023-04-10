@@ -261,6 +261,21 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________
  */
 
+.ueber h1{
+    margin-bottom: 40px;
+}
+
+.ueber .col1{
+    margin-right: 30px;
+}
+.ueber .col2{
+    margin-left: 30px;
+    max-width: 50%;
+    border-left: solid;
+    border-color: lightgrey;
+}
+
+
 .details p{
     font-size: small;
     margin: 20px;
@@ -356,7 +371,6 @@ ________________________________________________________________________________
     border-radius: 50px;
     background-size: cover;
 }
-
 
 
 

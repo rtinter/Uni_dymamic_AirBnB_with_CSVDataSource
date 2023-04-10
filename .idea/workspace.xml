@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="details, nav, bild, gruppierung maibu seite">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="hr abgrenzungen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Malibu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Malibu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,9 @@
       <workItem from="1680973984736" duration="127000" />
       <workItem from="1681123653769" duration="632000" />
       <workItem from="1681130300417" duration="5146000" />
-      <workItem from="1681135462334" duration="55000" />
+      <workItem from="1681135462334" duration="111000" />
+      <workItem from="1681135658105" duration="61000" />
+      <workItem from="1681137236087" duration="2407000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -216,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681135446108</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="hr abgrenzungen">
+      <created>1681135549949</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681135549949</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +268,7 @@
     <MESSAGE value="Index mit Entdecken sowohl via button, als auch viele navbar verbunden" />
     <MESSAGE value="new main" />
     <MESSAGE value="details, nav, bild, gruppierung maibu seite" />
-    <option name="LAST_COMMIT_MESSAGE" value="details, nav, bild, gruppierung maibu seite" />
+    <MESSAGE value="hr abgrenzungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="hr abgrenzungen" />
   </component>
 </project>
