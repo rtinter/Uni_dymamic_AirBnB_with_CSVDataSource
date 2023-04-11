@@ -267,7 +267,21 @@ ________________________________________________________________________________
 /* Details_Seite
 __________________________________________________________________________________________________________
  */
+.überschrift_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.überschrift_details > * {
+    flex-basis: 100%;
+}
+
+.überschrift_details span{
+    text-decoration-line: underline;
+    font-weight: bold;
+}
 
 .ueber h1 {
     margin-bottom: 40px;
