@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="hr abgrenzungen">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Bewertungen Entdecken seite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entdecken.html" beforeDir="false" afterPath="$PROJECT_DIR$/Entdecken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +113,7 @@
       <workItem from="1681135462334" duration="111000" />
       <workItem from="1681135658105" duration="61000" />
       <workItem from="1681137236087" duration="2407000" />
-      <workItem from="1681197245062" duration="1386000" />
+      <workItem from="1681197245062" duration="2444000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681135549949</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Bewertungen Entdecken seite">
+      <created>1681198802047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681198802047</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +277,7 @@
     <MESSAGE value="new main" />
     <MESSAGE value="details, nav, bild, gruppierung maibu seite" />
     <MESSAGE value="hr abgrenzungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="hr abgrenzungen" />
+    <MESSAGE value="Bewertungen Entdecken seite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bewertungen Entdecken seite" />
   </component>
 </project>

@@ -101,8 +101,12 @@ section {
 
 .bildergalerie img {
     width: 300px;
+    max-width: 300px;
     margin: 10px;
     border-radius: 5px;
+    height: 220px;
+    max-height: 220px;
+
 }
 
 .hotel1 p {
