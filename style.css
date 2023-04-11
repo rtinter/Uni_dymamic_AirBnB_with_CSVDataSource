@@ -384,6 +384,26 @@ ________________________________________________________________________________
     background-size: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer und flexcontainer
 __________________________________________________________________________________________________________
 */
@@ -393,9 +413,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    text-align: center;
-    align-items: top;
-    padding-bottom: 10px;
+    text-align: center;padding-bottom: 10px;
 }
 
 .anzeigebilder {
@@ -407,7 +425,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 
 
@@ -434,9 +451,6 @@ footer {
 .col-6 {
     width: 100%;
 }
-
-
-
 
 
 /* responsive
