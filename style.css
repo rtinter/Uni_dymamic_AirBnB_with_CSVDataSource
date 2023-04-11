@@ -110,35 +110,23 @@ section {
 }
 
 .hotel1 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .hotel2 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .hotel3 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .hotel4 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .button {
@@ -148,6 +136,11 @@ section {
     border-radius: 20px;
     text-decoration: none;
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .button:hover {
@@ -271,9 +264,10 @@ ________________________________________________________________________________
     font-size: small;
 }
 
-/* Entdecken_Seite
+/* Details_Seite
 __________________________________________________________________________________________________________
  */
+
 
 .ueber h1 {
     margin-bottom: 40px;
