@@ -400,12 +400,16 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________
 */
 
+.bewertungen p{
+    font-size: small;
+}
+
 section .bewertungen{
     width: 90%;
     margin: 5%;
 }
 
-section h2{
+section h3{
     justify-content: center;
     margin-left: 200px;
     font-weight: normal;
@@ -462,29 +466,14 @@ section h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer und flexcontainer
 __________________________________________________________________________________________________________
 */
 
 footer {
 
+    border-top-style: solid;
+    border-top-color: #c0c0c0;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -556,11 +545,15 @@ ________________________________________________________________________________
         flex-direction: column;
     }
 
-    .container{
+    .container1{
         max-width: 90%;
         justify-content: flex-start;
-        flex-wrap: wrap;
-        min-width: 120px;
+
+    }
+
+    .container1 .item{
+        max-width: 90%;
+        justify-content: flex-start;
     }
 
     .col img {
