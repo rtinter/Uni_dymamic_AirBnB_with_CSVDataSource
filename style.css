@@ -396,6 +396,69 @@ ________________________________________________________________________________
     background-size: cover;
 }
 
+/* Bewertungen
+__________________________________________________________________________________________________________
+*/
+
+section .bewertungen{
+    width: 90%;
+    margin: 5%;
+}
+
+section h2{
+    justify-content: center;
+    margin-left: 200px;
+    font-weight: normal;
+}
+
+.bewertungen .container1{
+    margin: 40px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.bewertungen .container1 span{
+    font-weight: bold;
+}
+
+
+.container2 .item img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+.container2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container2 > *{
+    width: 500px;
+}
+
+.container2 .item img,span{
+    flex-direction: column;
+}
+
+.bewerterdetails{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+   font-weight: lighter;
+}
+
+.container2 .item{
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+
+
 
 
 
@@ -493,7 +556,16 @@ ________________________________________________________________________________
         flex-direction: column;
     }
 
+    .container{
+        max-width: 90%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        min-width: 120px;
+    }
+
     .col img {
         max-width: 90%;
     }
+
+
 }

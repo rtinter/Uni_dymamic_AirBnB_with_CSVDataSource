@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="links">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Überschriften Zentrieren">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fehler.html" beforeDir="false" afterPath="$PROJECT_DIR$/Fehler.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Malibu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Malibu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calaca.html" beforeDir="false" afterPath="$PROJECT_DIR$/calaca.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +116,7 @@
       <workItem from="1681197245062" duration="2493000" />
       <workItem from="1681200090544" duration="3693000" />
       <workItem from="1681216522930" duration="1287000" />
-      <workItem from="1681230019251" duration="1856000" />
+      <workItem from="1681230019251" duration="15461000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -253,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681230555430</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Überschriften Zentrieren">
+      <created>1681231951410</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681231951410</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +304,8 @@
     <MESSAGE value="Bewertungen Entdecken seite" />
     <MESSAGE value="Entdecken Bilder 1 und 2 angepasst" />
     <MESSAGE value="links" />
-    <option name="LAST_COMMIT_MESSAGE" value="links" />
+    <MESSAGE value="Überschriften zentralisieren" />
+    <MESSAGE value="Überschriften Zentrieren" />
+    <option name="LAST_COMMIT_MESSAGE" value="Überschriften Zentrieren" />
   </component>
 </project>
