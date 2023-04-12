@@ -101,40 +101,32 @@ section {
 
 .bildergalerie img {
     width: 300px;
+    max-width: 300px;
     margin: 10px;
     border-radius: 5px;
+    height: 220px;
+    max-height: 220px;
+
 }
 
 .hotel1 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .hotel2 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .hotel3 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .hotel4 p {
-    position: absolute;
-    padding-top: 180px;
-    padding-left: 30px;
-    color: whitesmoke;
-    font-size: 3vh;
+    padding-left: 90px;
+    font-size: 2vh;
 }
 
 .button {
@@ -144,6 +136,11 @@ section {
     border-radius: 20px;
     text-decoration: none;
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .button:hover {
@@ -267,9 +264,24 @@ ________________________________________________________________________________
     font-size: small;
 }
 
-/* Entdecken_Seite
+/* Details_Seite
 __________________________________________________________________________________________________________
  */
+.überschrift_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.überschrift_details > * {
+    flex-basis: 100%;
+}
+
+.überschrift_details span{
+    text-decoration-line: underline;
+    font-weight: bold;
+}
 
 .ueber h1 {
     margin-bottom: 40px;
@@ -384,18 +396,88 @@ ________________________________________________________________________________
     background-size: cover;
 }
 
+/* Bewertungen
+__________________________________________________________________________________________________________
+*/
+
+.bewertungen p{
+    font-size: small;
+}
+
+section .bewertungen{
+    width: 90%;
+    margin: 5%;
+}
+
+section h3{
+    justify-content: center;
+    margin-left: 200px;
+    font-weight: normal;
+}
+
+.bewertungen .container1{
+    margin: 40px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.bewertungen .container1 span{
+    font-weight: bold;
+}
+
+
+.container2 .item img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+.container2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container2 > *{
+    width: 500px;
+}
+
+.container2 .item img,span{
+    flex-direction: column;
+}
+
+.bewerterdetails{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+   font-weight: lighter;
+}
+
+.container2 .item{
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+
+
+
+
+
 /* footer und flexcontainer
 __________________________________________________________________________________________________________
 */
 
 footer {
 
+    border-top-style: solid;
+    border-top-color: #c0c0c0;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    text-align: center;
-    align-items: top;
-    padding-bottom: 10px;
+    text-align: center;padding-bottom: 10px;
 }
 
 .anzeigebilder {
@@ -407,7 +489,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 
 
@@ -434,9 +515,6 @@ footer {
 .col-6 {
     width: 100%;
 }
-
-
-
 
 
 /* responsive
@@ -467,7 +545,20 @@ ________________________________________________________________________________
         flex-direction: column;
     }
 
+    .container1{
+        max-width: 90%;
+        justify-content: flex-start;
+
+    }
+
+    .container1 .item{
+        max-width: 90%;
+        justify-content: flex-start;
+    }
+
     .col img {
         max-width: 90%;
     }
+
+
 }
