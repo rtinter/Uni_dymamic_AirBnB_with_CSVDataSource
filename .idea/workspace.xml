@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="bilder angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,8 @@
       <workItem from="1681289009852" duration="734000" />
       <workItem from="1681289747995" duration="877000" />
       <workItem from="1681380168666" duration="584000" />
-      <workItem from="1681390236293" duration="318000" />
+      <workItem from="1681390236293" duration="354000" />
+      <workItem from="1681459835434" duration="932000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681312591270</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="bilder angepasst">
+      <created>1681390584446</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681390584446</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +341,7 @@
     <MESSAGE value="Überschriften Zentrieren" />
     <MESSAGE value="Bewertungen" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="bilder angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="bilder angepasst" />
   </component>
 </project>
