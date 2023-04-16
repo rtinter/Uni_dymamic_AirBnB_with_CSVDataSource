@@ -26,18 +26,27 @@
         <li><a href="#">About</a></li>
         <li><a href="Entdecken.html">Entdecken</a></li>
       </ul>
-
     </nav>
   </header>
   <br>
 
 <label for="maxPreis">Maximalpreis in Euro: </label>
 <input id="maxPreis" type="number" value="100000">
+<button onclick="aufsteigendPrice()">^</button>
+<button onclick="absteigendPrice()">v</button>
 <label for="rating">Mindestbewertung: </label>
 <input id="rating" type="number" value="0">
+<button onclick="aufsteigendStars()">^</button>
+<button onclick="absteigendStars()">v</button>
+<label for="name">Name der Wohnung: </label>
+<input id="name" type="text" value="">
+<label for="type">Art der Wohnung: </label>
+<input id="type" type="text" value="">
+<label for="stadtteil">Stadtteil: </label>
+<input id="stadtteil" type="text" value="">
 
 
-<button onclick="onFilter()">filtern</button>
+<button onclick="filtern()">filtern</button>
 
   <section class="entdecken">
 
