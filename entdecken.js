@@ -101,7 +101,7 @@ function createEntdecken(data) {
     anzeige.innerHTML = "";
     for (let i = 0; i < 100; i++) {
         let div = "<div class=\"colums1\">";
-        div += "<a href=\"index.html\">"+"<img src=\"" + data[i]["picture_url"] + "\">"+"</a>";
+        div += "<a href=\"Details.html\" onclick=\"storeData("+data[i]["id"]+")\">"+"<img src=\"" + data[i]["picture_url"] + "\">"+"</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
         div += "<p>" + data[i]["room_type"] + "</p>"
         div += "<p>" + data[i]["host_name"] + "</p>"
@@ -114,6 +114,9 @@ function createEntdecken(data) {
 
 }
 
-function storeData(JSONObject) {
-  localStorage.setItem("fewo", JSONObject)
+function storeData(id) {
+  filterliste.forEach(fewo => {
+    if (fewo.id==id)
+    localStorage.setItem("fewo", fewo)
+  });
 }
