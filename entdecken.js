@@ -116,7 +116,7 @@ function createEntdecken(data) {
 
 function storeData(id) {
     filterliste.forEach(fewo => {
-        if (fewo.id == id) {
+        if (fewo.id === id) {
             localStorage.setItem("fewo", JSON.stringify(fewo))
         }
     });
