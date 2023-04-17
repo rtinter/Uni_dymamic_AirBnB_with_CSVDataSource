@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="style anpassungen, schriftgröße und Bewertungen in der Liste hinzugefügt">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Bilder oben details / Gastgeber">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -131,6 +128,7 @@
       <workItem from="1681656640374" duration="173000" />
       <workItem from="1681656816196" duration="3395000" />
       <workItem from="1681724581165" duration="16000" />
+      <workItem from="1681734438944" duration="523000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -307,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681719723439</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Bilder oben details / Gastgeber">
+      <created>1681733404460</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681733404460</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +364,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="bilder angepasst" />
     <MESSAGE value="style anpassungen, schriftgröße und Bewertungen in der Liste hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="style anpassungen, schriftgröße und Bewertungen in der Liste hinzugefügt" />
+    <MESSAGE value="Bilder oben details / Gastgeber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bilder oben details / Gastgeber" />
   </component>
 </project>

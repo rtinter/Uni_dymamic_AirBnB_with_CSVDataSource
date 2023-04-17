@@ -327,16 +327,17 @@ ________________________________________________________________________________
 }
 
 
-
-
-
-
 .ueber h1 {
     margin-bottom: 40px;
 }
 
+.ueber .row{
+    display: flex;
+}
+
 .ueber .col1 {
     margin-right: 30px;
+    flex-basis: 50%;
 }
 
 .ueber .col2 {
@@ -344,6 +345,7 @@ ________________________________________________________________________________
     max-width: 50%;
     border-left: solid;
     border-color: lightgrey;
+    padding-left: 50px;
 }
 
 
@@ -367,16 +369,20 @@ ________________________________________________________________________________
     display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
+
 }
 
 .col1,
 .col2 {
     display: flex;
-    flex-basis: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
+}
+
+.kalender{
+    width: 500px;
 }
 
 
