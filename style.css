@@ -288,6 +288,49 @@ ________________________________________________________________________________
     font-weight: bold;
 }
 
+
+.row_bilder{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_links {
+    flex: 1 1 60%;
+}
+
+.col_rechts {
+    flex: 1 1 40%;
+    min-width: 15ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.col_rechts p{
+    font-size:small;
+}
+
+
+.row_bilder .col_links img{
+    width: 100%;
+    border-radius: 30px;
+    min-width: 400px;
+}
+
+.row_bilder .col_rechts img{
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+
+
+
+
+
 .ueber h1 {
     margin-bottom: 40px;
 }
@@ -495,43 +538,6 @@ footer {
     text-align: center;padding-bottom: 10px;
 }
 
-.anzeigebilder {
-    margin: 10px;
-    border-radius: 5px;
-}
-
-.rowfw {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
-.col-1 {
-    width: 16.6%;
-}
-
-.col-2 {
-    width: 33.3%;
-}
-
-.col-3 {
-    width: 50%;
-}
-
-.col-4 {
-    width: 66.6%;
-}
-
-.col-5 {
-    width: 83.3%;
-}
-
-.col-6 {
-    width: 100%;
-}
-
-
 /* responsive
 __________________________________________________________________________________________________________
 */
@@ -564,6 +570,11 @@ ________________________________________________________________________________
         max-width: 90%;
         justify-content: flex-start;
 
+    }
+
+    .row_bilder{
+        max-width: 90%;
+        justify-content: flex-start;
     }
 
     .container1 .item{

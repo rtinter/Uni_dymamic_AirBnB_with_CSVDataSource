@@ -51,3 +51,13 @@ Papa.parse('reviews.csv', {
 <p>Wir hatten einen fantastischen Aufenthalt. Was für ein schönes, gepflegtes Haus mit einem unglaublichen
   Blick. Sara war sehr aufmerksam und hilfsbereit.</p>
 </div> */}
+
+
+function erzeugeBild() {
+    let div = document.getElementById("bildDetails")
+    div.innerHTML = ""
+    let innertext = ""
+    innertext += "<h1>" + fewo.name + "</h1>"
+    innertext += "<p>" + fewo.room_type + " - " + fewo.host_location + " - <span>" + fewo.price + "</span> - " + fewo.review_scores_rating + " &#9733 - " + fewo.number_of_reviews + " Bewertungen</p>"
+    div.innerHTML = innertext;
+}

@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="style anpassungen, schriftgröße und Bewertungen in der Liste hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/listings.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
