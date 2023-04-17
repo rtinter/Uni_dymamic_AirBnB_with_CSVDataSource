@@ -33,31 +33,25 @@ Papa.parse('reviews.csv', {
 
 
 
+  
+
 
 // Bewertungen
 
 
 
-{/* <div class="item">
-<div class="bewerterdetails">
-  <img
-    src="https://a0.muscache.com/im/pictures/user/9b6a1728-d217-4ad8-9a01-79681f9f1241.jpg?aki_policy=profile_large"
-    alt="Bild einer jungen Frau">
-  <span>Anette</span>
-  <span>März 2023</span>
-  <p>4.9 &#9733;</p>
-
-</div>
-<p>Wir hatten einen fantastischen Aufenthalt. Was für ein schönes, gepflegtes Haus mit einem unglaublichen
-  Blick. Sara war sehr aufmerksam und hilfsbereit.</p>
-</div> */}
 
 
-function erzeugeBild() {
-    let div = document.getElementById("bildDetails")
-    div.innerHTML = ""
-    let innertext = ""
-    innertext += "<h1>" + fewo.name + "</h1>"
-    innertext += "<p>" + fewo.room_type + " - " + fewo.host_location + " - <span>" + fewo.price + "</span> - " + fewo.review_scores_rating + " &#9733 - " + fewo.number_of_reviews + " Bewertungen</p>"
-    div.innerHTML = innertext;
+function bewertungen5 (){
+    let divAlle = document.getElementById("bewertung")
+    divAlle.innerHTML = ""
+    for (let i = 0;i<5;i++){
+        let divEinzel = "<div  class=\"item\"> <div class=\"bewerterdetails\">"
+        divEinzel += "<span>"+reviews[i]["reviewer_name"]+"</span>"
+        divEinzel += "<span>"+reviews[i]["date"]+"</span>"
+        divEinzel += "</div><p>"+reviews[i]["comments"]+"</p></div> "
+        divAlle.innerHTML+=divEinzel
+        
+    }
+
 }
