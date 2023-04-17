@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Bild/ Gastgeber">
       <change beforePath="$PROJECT_DIR$/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,7 @@
       <workItem from="1681656816196" duration="3395000" />
       <workItem from="1681724581165" duration="16000" />
       <workItem from="1681734438944" duration="4834000" />
-      <workItem from="1681739290446" duration="1148000" />
+      <workItem from="1681739290446" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -322,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681734989450</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Bild/ Gastgeber">
+      <created>1681740474179</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1681740474179</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +378,7 @@
     <MESSAGE value="bilder angepasst" />
     <MESSAGE value="style anpassungen, schriftgröße und Bewertungen in der Liste hinzugefügt" />
     <MESSAGE value="Bilder oben details / Gastgeber" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bilder oben details / Gastgeber" />
+    <MESSAGE value="Bild/ Gastgeber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bild/ Gastgeber" />
   </component>
 </project>

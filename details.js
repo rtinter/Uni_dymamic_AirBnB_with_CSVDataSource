@@ -79,18 +79,6 @@ div.innerHTML = innertext;
 
 // Bewertungen
 
-
-
-{/* <div class="item">
-<div class="bewerterdetails">
-  <img
-    src="https://a0.muscache.com/im/pictures/user/9b6a1728-d217-4ad8-9a01-79681f9f1241.jpg?aki_policy=profile_large"
-    alt="Bild einer jungen Frau">
-  <span>Anette</span>
-  <span>März 2023</span>
-  <p>4.9 &#9733;</p>
-
-
 function bewertungen5() {
     let divAlle = document.getElementById("bewertung")
     divAlle.innerHTML = ""
