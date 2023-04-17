@@ -113,3 +113,7 @@ function createEntdecken(data) {
     }
 
 }
+
+function storeData(JSONObject) {
+  localStorage.setItem("fewo", JSONObject)
+}
