@@ -101,13 +101,13 @@ function createEntdecken(data) {
     anzeige.innerHTML = "";
     for (let i = 0; i < 100; i++) {
         let div = "<div class=\"colums1\">";
-        div += "<a href=\"Details.html\" onclick=\"storeData("+data[i]["id"]+")\">"+"<img src=\"" + data[i]["picture_url"] + "\">"+"</a>";
+        div += "<a href=\"Details.html\" onclick=\"storeData(" + data[i]["id"] + ")\">" + "<img src=\"" + data[i]["picture_url"] + "\">" + "</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
         div += "<p>" + data[i]["room_type"] + "</p>"
         div += "<p>" + data[i]["host_name"] + "</p>"
         div += "<p>" + data[i]["price"] + "</p>"
         div += "<span>" + data[i]["review_scores_rating"] + " &#9733;</span>"
-        div += "<p>" + data[i]["number_of_reviews"] + " Bewertungen"+ "</p>"
+        div += "<p>" + data[i]["number_of_reviews"] + " Bewertungen" + "</p>"
         div += "</div> <br>"
         anzeige.innerHTML += div
     }
@@ -115,9 +115,9 @@ function createEntdecken(data) {
 }
 
 function storeData(id) {
-  filterliste.forEach(fewo => {
-    if (fewo.id==id){
-      localStorage.setItem("fewo", JSON.stringify(fewo))
-  }
-  });
+    filterliste.forEach(fewo => {
+        if (fewo.id == id) {
+            localStorage.setItem("fewo", JSON.stringify(fewo))
+        }
+    });
 }
