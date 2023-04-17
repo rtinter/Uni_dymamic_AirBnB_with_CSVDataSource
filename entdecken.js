@@ -101,7 +101,7 @@ function createEntdecken(data) {
     anzeige.innerHTML = "";
     for (let i = 0; i < 100; i++) {
         let div = "<div class=\"colums1\">";
-        div += "<img src=\"" + data[i]["picture_url"] + "\">";
+        div += "<a href=\"index.html\">"+"<img src=\"" + data[i]["picture_url"] + "\">"+"</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
         div += "<p>" + data[i]["room_type"] + "</p>"
         div += "<p>" + data[i]["host_name"] + "</p>"
