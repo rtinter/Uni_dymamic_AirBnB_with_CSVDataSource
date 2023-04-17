@@ -292,6 +292,7 @@ ________________________________________________________________________________
 .row_bilder{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 100px;
 }
 
 .col_links {
@@ -317,6 +318,7 @@ ________________________________________________________________________________
     width: 100%;
     border-radius: 30px;
     min-width: 400px;
+    max-width: 500px;
 }
 
 .row_bilder .col_rechts img{
@@ -345,7 +347,7 @@ ________________________________________________________________________________
     max-width: 50%;
     border-left: solid;
     border-color: lightgrey;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 
@@ -590,6 +592,14 @@ ________________________________________________________________________________
 
     .col img {
         max-width: 90%;
+    }
+
+    .ueber h1 {
+        margin: 80px;
+    }
+
+    .col1 h2{
+        margin: 40px;
     }
 
 
