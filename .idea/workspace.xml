@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="bilder angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Java_script" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,6 +123,11 @@
       <workItem from="1681380168666" duration="584000" />
       <workItem from="1681390236293" duration="354000" />
       <workItem from="1681459835434" duration="932000" />
+      <workItem from="1681648093183" duration="5221000" />
+      <workItem from="1681656530336" duration="50000" />
+      <workItem from="1681656582876" duration="14000" />
+      <workItem from="1681656640374" duration="173000" />
+      <workItem from="1681656816196" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -308,7 +314,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Rene_newBranch" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

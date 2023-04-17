@@ -180,6 +180,7 @@ ________________________________________________________________________________
 .colums8 {
     flex-basis: 15%;
     margin-bottom: 2em;
+     max-height: 399px;
 }
 
 .entdecken .colums1 img {
@@ -257,10 +258,14 @@ ________________________________________________________________________________
 }
 
 .entdecken .row h5 {
-    font-size: medium;
+    font-size: small;
 }
 
 .entdecken .row p {
+    font-size: small;
+}
+
+.entdecken .row span {
     font-size: small;
 }
 
