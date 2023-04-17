@@ -1,7 +1,21 @@
 
 let fewo = JSON.parse(localStorage.getItem("fewo"));
+let reviews =[]
 
-console.log(JSON.stringify(fewo))
+Papa.parse('reviews.csv', {
+    download: true,
+    header: true,
+    skipEmptyLines: 'greedy',
+    complete: (results) => {
+       results.data.forEach(review => {
+        if(review.listing_id === fewo.id){
+        reviews.push(review)
+        }
+       });
+        console.log(reviews)
+    },
+});
+
 
 function test() {
     document.getElementById("test").innerHTML = JSON.stringify(fewo)

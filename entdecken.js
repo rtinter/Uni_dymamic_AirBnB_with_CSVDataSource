@@ -12,10 +12,6 @@ Papa.parse('listings.csv', {
     },
 });
 
-
-
-
-
 function filtern() {
     let price = parseFloat(document.getElementById("maxPreis").value);
     let stars = parseFloat(document.getElementById("rating").value);
@@ -94,12 +90,43 @@ function absteigendStars() {
     createEntdecken(filterliste)
 }
 
+function weiter (){
+    anzeigeAnfang+= 100
+    anzeigeEnde+=100
+    createEntdecken(filterliste)
+}
 
+function zurueck (){
+    anzeigeAnfang-= 100
+    anzeigeEnde-=100
+    createEntdecken(filterliste)
+}
+
+let anzeigeAnfang=0
+let anzeigeEnde =100 
 
 function createEntdecken(data) {
     let anzeige = document.getElementById("FewoListe")
     anzeige.innerHTML = "";
-    for (let i = 0; i < 100; i++) {
+    if (anzeigeAnfang <0){
+        anzeigeAnfang=0
+        anzeigeEnde=100
+        anzeige.innerHTML = "<h2 class=\"\"> Sie sind schon auf der ersten Seite</h2>"
+    }
+
+    if (anzeigeEnde>=data.length){
+        anzeigeAnfang=data.length-101
+        anzeigeEnde=data.length-1
+        anzeige.innerHTML = "<h2>Das is die Letzte Seite mehr haben wir nicht ¯\\_(ツ)_/¯</h2>"
+    }
+
+    if (anzeigeAnfang<0){
+        anzeigeAnfang=0
+        anzeige.innerHTML = "<h2> Mehr haben wir leider nicht ¯\\_(ツ)_/¯</h2>"
+    }
+
+
+    for (let i = anzeigeAnfang; i < anzeigeEnde; i++) {
         let div = "<div class=\"colums1\">";
         div += "<a href=\"Details.html\" onclick=\"storeData(" + data[i]["id"] + ")\">" + "<img src=\"" + data[i]["picture_url"] + "\">" + "</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
