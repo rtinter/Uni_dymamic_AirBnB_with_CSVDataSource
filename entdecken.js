@@ -128,7 +128,7 @@ function createEntdecken(data) {
 
     for (let i = anzeigeAnfang; i < anzeigeEnde; i++) {
         let div = "<div class=\"colums1\">";
-        div += "<a href=\"Details.html\" onclick=\"storeData(" + data[i]["id"] + ")\">" + "<img src=\"" + data[i]["picture_url"] + "\">" + "</a>";
+        div += "<a href=\"Details.html\" onclick=\"storeData(" + data[i]["id"] + ")\">" + "<img loading=\"lazy\" src=\"" + data[i]["picture_url"] + "\">" + "</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
         div += "<p>" + data[i]["room_type"] + "</p>"
         div += "<p>" + data[i]["host_name"] + "</p>"
