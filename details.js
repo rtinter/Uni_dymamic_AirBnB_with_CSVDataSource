@@ -58,7 +58,7 @@ Papa.parse('reviews.csv', {
     //Besonderheiten + Array ==>>>>>> nochmal schauen, welches wir nehmen - ggf button für mehr einbauen
 
 
-    window.onload = function besonderheiten1(){
+    function besonderheiten1(){
 
         let besonderheiten = document.getElementById("besonderheiten")
         besonderheiten.innerHTML = ""
