@@ -19,78 +19,75 @@ Papa.parse('reviews.csv', {
 
 
 
-    // Ueberschrift
-    let div = document.getElementById("ueberschrift")
-    div.innerHTML = ""
-    let innertext = ""
-    innertext += "<h1>" + fewo.name + "</h1>"
-    innertext += "<p>" + fewo.room_type + " - " + fewo.host_location + " - <span>" + fewo.price + "</span> - " + fewo.review_scores_rating + " &#9733 - " + fewo.number_of_reviews + " Bewertungen</p>"
-    div.innerHTML = innertext;
+// Ueberschrift
+let div = document.getElementById("ueberschrift")
+div.innerHTML = ""
+let innertext = ""
+innertext += "<h1>" + fewo.name + "</h1>"
+innertext += "<p>" + fewo.room_type + " - " + fewo.host_location + " - <span>" + fewo.price + "</span> - " + fewo.review_scores_rating + " &#9733 - " + fewo.number_of_reviews + " Bewertungen</p>"
+div.innerHTML = innertext;
 
 
-    // Bild und Gastgeberdetails
+// Bild und Gastgeberdetails
 
-    let detailbilder = document.getElementById("bildDetails")
-    detailbilder.innerHTML = ""
-    let innerText_detailbilder = "<div class=\"col_links\">"
-    innerText_detailbilder += "<img src=\"" + fewo.picture_url + "\">"
-    innerText_detailbilder += "</div>"
-    innerText_detailbilder += "<div class=\"col_rechts\">"
-    innerText_detailbilder += "<img src=\"" + fewo.host_thumbnail_url + "\">"
-    innerText_detailbilder += "<br>" + "<h4>Gastgeber:in ist:" + fewo.host_name + "</h4>"
-    innerText_detailbilder += "<br>" + "<p>Antwortrate: " + fewo.host_response_rate + "<p>Antwortzeit: "
-    innerText_detailbilder += fewo.host_response_time +"</p>" + "<p>Akzeptanzrate: " + fewo.host_acceptance_rate + "</p>"
-    innerText_detailbilder += "<p>" + fewo.accommodates + " Gäste - " + fewo.bedrooms + " Schlafzimmer - "
-    innerText_detailbilder += fewo.beds + " Betten - " + fewo.bathrooms_text + "</p></div>"
-    detailbilder.innerHTML = innerText_detailbilder
-
-
-
-    //Details über die Unterkunft
-
-    let ueberUnterkunft = document.getElementById("ueber_Unterkunft")
-    ueberUnterkunft.innerHTML = ""
-    let innerText_ueberUnterkunft = "<p>"+fewo.description+"</p>"
-    ueberUnterkunft.innerHTML = innerText_ueberUnterkunft
+let detailbilder = document.getElementById("bildDetails")
+detailbilder.innerHTML = ""
+let innerText_detailbilder = "<div class=\"col_links\">"
+innerText_detailbilder += "<img src=\"" + fewo.picture_url + "\">"
+innerText_detailbilder += "</div>"
+innerText_detailbilder += "<div class=\"col_rechts\">"
+innerText_detailbilder += "<img src=\"" + fewo.host_thumbnail_url + "\">"
+innerText_detailbilder += "<br>" + "<h4>Gastgeber:in ist:" + fewo.host_name + "</h4>"
+innerText_detailbilder += "<br>" + "<p>Antwortrate: " + fewo.host_response_rate + "<p>Antwortzeit: "
+innerText_detailbilder += fewo.host_response_time + "</p>" + "<p>Akzeptanzrate: " + fewo.host_acceptance_rate + "</p>"
+innerText_detailbilder += "<p>" + fewo.accommodates + " Gäste - " + fewo.bedrooms + " Schlafzimmer - "
+innerText_detailbilder += fewo.beds + " Betten - " + fewo.bathrooms_text + "</p></div>"
+detailbilder.innerHTML = innerText_detailbilder
 
 
 
-    //Besonderheiten + Array ==>>>>>> nochmal schauen, welches wir nehmen - ggf button für mehr einbauen
+//Details über die Unterkunft
+
+let ueberUnterkunft = document.getElementById("ueber_Unterkunft")
+ueberUnterkunft.innerHTML = ""
+let innerText_ueberUnterkunft = "<p>" + fewo.description + "</p>"
+ueberUnterkunft.innerHTML = innerText_ueberUnterkunft
 
 
-    function besonderheiten1(){
 
-        let besonderheiten = document.getElementById("besonderheiten")
-        besonderheiten.innerHTML = ""
-        let innerText_besonderheiten = "<h2>Besonderheiten:</h2>"
+//Besonderheiten + Array ==>>>>>> nochmal schauen, welches wir nehmen - ggf button für mehr einbauen
 
-        /*Mit forEach Leider bei vielen Wohnungen zuviele Angezeigt
 
-        amenitiesArray.forEach(element => {
-            innerText_besonderheiten += "<p>" + element + "</p>"
-        })
-        */
+function besonderheiten1() {
 
-        // Auf 10 Limitiert mit for - Schleife
-        for (let i = 0; i < 10 ; i++) {
-            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";  //  !!!!!!!!!!!!!!!!!!!! HIER WIRD ÜBER DAS ARRAY GEGANGEN UND AUSGEGEBEN
-                                                                                // Ohne das, geht es nicht, da ich so nicht über einen STRING gehen kann.
-                                                                                //Vielleicht wieder zurück mit Stringify
-        }
+    let besonderheiten = document.getElementById("besonderheiten")
+    besonderheiten.innerHTML = ""
+    let innerText_besonderheiten = "<h2>Besonderheiten:</h2>"
+    /*Mit forEach Leider bei vielen Wohnungen zuviele Angezeigt
 
-        innerText_besonderheiten += "<p> -- und mehr! -- </p>"
+    amenitiesArray.forEach(element => {
+        innerText_besonderheiten += "<p>" + element + "</p>"
+    })
+    */
 
-        besonderheiten.innerHTML = innerText_besonderheiten
+    // Auf 10 Limitiert mit for - Schleife
+    for (let i = 0; i < 10; i++) {
+        innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";  //  !!!!!!!!!!!!!!!!!!!! HIER WIRD ÜBER DAS ARRAY GEGANGEN UND AUSGEGEBEN
+                                                                        // Ohne das, geht es nicht, da ich so nicht über einen STRING gehen kann.
+                                                                        //Vielleicht wieder zurück mit Stringify
+    }
+    innerText_besonderheiten += "<p> -- und mehr! -- </p>"
+    besonderheiten.innerHTML = innerText_besonderheiten
 }
 
 
 
 
-    // Map
+// Map
 
 let mapDiv = document.getElementById("map");
 
-let innerText_newmap = "<iframe width=\"300\" height=\"450\" src=\"https://maps.google.com/maps?q="+fewo.latitude+","+fewo.longitude+"&hl=de&z=14&amp;output=embed\"></iframe>";
+let innerText_newmap = "<iframe width=\"300\" height=\"450\" src=\"https://maps.google.com/maps?q=" + fewo.latitude + "," + fewo.longitude + "&hl=de&z=14&amp;output=embed\"></iframe>";
 
 mapDiv.innerHTML = innerText_newmap
 
@@ -106,7 +103,7 @@ function bewertungen5() {
     let divAlle = document.getElementById("bewertung")
     divAlle.innerHTML = ""
     let weniger = document.getElementById("wenigerAnzeigen")
-    if (weniger != null){
+    if (weniger != null) {
         weniger.remove()
     }
     for (let i = 0; i < 5; i++) {
@@ -117,7 +114,7 @@ function bewertungen5() {
         divAlle.innerHTML += divEinzel
     }
     if (reviews.length >= 5) {
-        divAlle.insertAdjacentHTML("afterend","<button id=\"alleAnzeigen\" class=\"button\" onclick=\"alleAnzeigen()\" >Alle Anzeigen</button>")
+        divAlle.insertAdjacentHTML("afterend", "<button id=\"alleAnzeigen\" class=\"button\" onclick=\"alleAnzeigen()\" >Alle Anzeigen</button>")
     }
 }
 
@@ -132,5 +129,5 @@ function alleAnzeigen() {
         divEinzel += "</div><p>" + reviews[i]["comments"] + "</p></div> "
         divAlle.innerHTML += divEinzel
     }
-    divAlle.insertAdjacentHTML("afterend","<button id=\"wenigerAnzeigen\" class=\"button\" onclick=\"bewertungen5()\" >weniger Anzeigen</button>")
+    divAlle.insertAdjacentHTML("afterend", "<button id=\"wenigerAnzeigen\" class=\"button\" onclick=\"bewertungen5()\" >weniger Anzeigen</button>")
 }
