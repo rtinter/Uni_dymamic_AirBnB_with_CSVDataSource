@@ -71,12 +71,19 @@ function besonderheiten1() {
     */
 
     // Auf 10 Limitiert mit for - Schleife
-    for (let i = 0; i < 10; i++) {
-        innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";  //  !!!!!!!!!!!!!!!!!!!! HIER WIRD ÜBER DAS ARRAY GEGANGEN UND AUSGEGEBEN
-                                                                        // Ohne das, geht es nicht, da ich so nicht über einen STRING gehen kann.
-                                                                        //Vielleicht wieder zurück mit Stringify
+    if (amenitiesArray != undefined) {
+        for (let i = 0; i < 10; i++) {
+            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";  //  !!!!!!!!!!!!!!!!!!!! HIER WIRD ÜBER DAS ARRAY GEGANGEN UND AUSGEGEBEN
+            // Ohne das, geht es nicht, da ich so nicht über einen STRING gehen kann.
+            //Vielleicht wieder zurück mit Stringify
+        }
+
+        if (amenitiesArray.length > 10) {
+            innerText_besonderheiten += "<p> -- und mehr! -- </p>"
+        }
+    } else {
+        innerText_besonderheiten = " keine Besonderheiten Vorhanden!"
     }
-    innerText_besonderheiten += "<p> -- und mehr! -- </p>"
     besonderheiten.innerHTML = innerText_besonderheiten
 }
 
@@ -106,15 +113,26 @@ function bewertungen5() {
     if (weniger != null) {
         weniger.remove()
     }
-    for (let i = 0; i < 5; i++) {
-        let divEinzel = "<div  class=\"item\"> <div class=\"bewerterdetails\">"
-        divEinzel += "<span>" + reviews[i]["reviewer_name"] + "</span>"
-        divEinzel += "<span>" + reviews[i]["date"] + "</span>"
-        divEinzel += "</div><p>" + reviews[i]["comments"] + "</p></div> "
-        divAlle.innerHTML += divEinzel
-    }
-    if (reviews.length >= 5) {
-        divAlle.insertAdjacentHTML("afterend", "<button id=\"alleAnzeigen\" class=\"button\" onclick=\"alleAnzeigen()\" >Alle Anzeigen</button>")
+
+    if (reviews.length != 0) {
+        if (reviews.length >= 5) {
+            for (let i = 0; i < 5; i++) {
+                let divEinzel = "<div  class=\"item\"> <div class=\"bewerterdetails\">"
+                divEinzel += "<span>" + reviews[i]["reviewer_name"] + "</span>"
+                divEinzel += "<span>" + reviews[i]["date"] + "</span>"
+                divEinzel += "</div><p>" + reviews[i]["comments"] + "</p></div> "
+                divAlle.innerHTML += divEinzel
+            }
+            divAlle.insertAdjacentHTML("afterend", "<button id=\"alleAnzeigen\" class=\"button\" onclick=\"alleAnzeigen()\" >Alle Anzeigen</button>")
+        } else {
+            for (let i = 0; i < reviews.length; i++) {
+                let divEinzel = "<div  class=\"item\"> <div class=\"bewerterdetails\">"
+                divEinzel += "<span>" + reviews[i]["reviewer_name"] + "</span>"
+                divEinzel += "<span>" + reviews[i]["date"] + "</span>"
+                divEinzel += "</div><p>" + reviews[i]["comments"] + "</p></div> "
+                divAlle.innerHTML += divEinzel
+            }
+        }
     }
 }
 
