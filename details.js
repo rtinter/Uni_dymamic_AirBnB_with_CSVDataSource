@@ -1,6 +1,7 @@
 
 let fewo = JSON.parse(localStorage.getItem("fewo"));
 let reviews = []
+let amenitiesArray = JSON.parse(fewo.amenities);
 
 Papa.parse('reviews.csv', {
     download: true,
@@ -18,18 +19,13 @@ Papa.parse('reviews.csv', {
 
 
 
-
-
-
-
-
-// Ueberschrift
-let div = document.getElementById("ueberschrift")
-div.innerHTML = ""
-let innertext = ""
-innertext += "<h1>" + fewo.name + "</h1>"
-innertext += "<p>" + fewo.room_type + " - " + fewo.host_location + " - <span>" + fewo.price + "</span> - " + fewo.review_scores_rating + " &#9733 - " + fewo.number_of_reviews + " Bewertungen</p>"
-div.innerHTML = innertext;
+    // Ueberschrift
+    let div = document.getElementById("ueberschrift")
+    div.innerHTML = ""
+    let innertext = ""
+    innertext += "<h1>" + fewo.name + "</h1>"
+    innertext += "<p>" + fewo.room_type + " - " + fewo.host_location + " - <span>" + fewo.price + "</span> - " + fewo.review_scores_rating + " &#9733 - " + fewo.number_of_reviews + " Bewertungen</p>"
+    div.innerHTML = innertext;
 
 
     // Bild und Gastgeberdetails
@@ -49,27 +45,41 @@ div.innerHTML = innertext;
     detailbilder.innerHTML = innerText_detailbilder
 
 
-        /*    <div id="bildDetails" class="row_bilder">
-        //       <div class="col_links">
-        //           <img src="https://a0.muscache.com/im/pictures/8255bdb1-1d65-4325-a744-6487dc51453b.jpg?im_w=1200" alt="">
-        //         </div>
-        //
-        //         <div class="col_rechts">
-        //           <img src="https://a0.muscache.com/im/pictures/user/ca347614-0549-40bf-86a5-36150d1e2386.jpg?im_w=240">
-        //           <br>
-        //           <h4>Privatunterkunft · Gastgeber:in ist Sara</h4>
-        //           <br>
-        //           <p>Sprachen: Nederlands, English, Français, Norsk, Español</p>
-        //           <p>Antwortrate: 100%</p>
-        //           <p>Antwortzeit: innerhalb einer Stunde</p>
-        //           <br>
-        //           <p>8 Gäste - 4 Schlafzimmer - 5 Betten - 3,5 Bäder</p>
-        //
-        //
-        //         </div>
-        //
-        //     </div>
+
+    //Details über die Unterkunft
+
+    let ueberUnterkunft = document.getElementById("ueber_Unterkunft")
+    ueberUnterkunft.innerHTML = ""
+    let innerText_ueberUnterkunft = "<p>"+fewo.description+"</p>"
+    ueberUnterkunft.innerHTML = innerText_ueberUnterkunft
+
+
+
+    //Besonderheiten + Array ==>>>>>> nochmal schauen, welches wir nehmen - ggf button für mehr einbauen
+
+
+    window.onload = function besonderheiten1(){
+
+        let besonderheiten = document.getElementById("besonderheiten")
+        besonderheiten.innerHTML = ""
+        let innerText_besonderheiten = "<h2>Besonderheiten:</h2>"
+
+        /*Mit forEach Leider bei vielen Wohnungen zuviele Angezeigt
+
+        amenitiesArray.forEach(element => {
+            innerText_besonderheiten += "<p>" + element + "</p>"
+        })
         */
+
+        // Auf 10 Limitiert mit for - Schleife
+        for (let i = 0; i < 10 ; i++) {
+            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";
+        }
+
+        innerText_besonderheiten += "<p> -- und mehr! -- </p>"
+
+        besonderheiten.innerHTML = innerText_besonderheiten
+}
 
 
 
