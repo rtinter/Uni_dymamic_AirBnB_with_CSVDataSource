@@ -90,6 +90,58 @@ function besonderheiten1() {
 
 
 
+
+//Kalender sachen ma schaun
+
+const now = new Date(); // das aktuelle Datum und Uhrzeit
+const currentMonth = now.getMonth(); // der aktuelle Monat (0-11)
+const currentDate = now.getDate(); // der aktuelle Tag des Monats (1-31)
+
+
+function updateCalendar(month, year) {
+    // hier können Sie eine Datenquelle abrufen, um die Belegungen und Preise für den angegebenen Monat und das Jahr zu erhalten
+    
+    // berechnen Sie die Anzahl der Tage im angegebenen Monat und Jahr
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    
+    // finden Sie den ersten Tag des Monats (0 = Sonntag, 1 = Montag, usw.)
+    const firstDayOfMonth = new Date(year, month, 1).getDay();
+    
+    // finden Sie die Tabellenzellen für jeden Tag des Monats
+    const cells = document.querySelectorAll('table tbody td');
+    
+    // aktualisieren Sie die Tabellenzellen für jeden Tag des Monats
+    let day = 1;
+    for (let i = 0; i < cells.length; i++) {
+      // wenn wir noch nicht am ersten Tag des Monats sind, lassen Sie die Zelle leer
+      if (i < firstDayOfMonth) {
+        cells[i].textContent = '';
+      } else if (day <= daysInMonth) {
+        // ansonsten fügen Sie den Tag in die Zelle ein
+        cells[i].textContent = day;
+        day++;
+      } else {
+        // wenn wir das Ende des Monats erreicht haben, lassen Sie die restlichen Zellen leer
+        cells[i].textContent = '';
+      }
+    }
+  }
+  
+  // rufen Sie die Funktion auf, um den Kalender für den aktuellen Monat zu aktualisieren
+  updateCalendar(currentMonth, now.getFullYear());
+  
+
+
+
+
+
+
+
+
+
+
+
+
 // Map
 
 let mapDiv = document.getElementById("map");
