@@ -1,7 +1,7 @@
 
 let fewo = JSON.parse(localStorage.getItem("fewo"));
 let reviews = []
-let amenitiesArray = JSON.parse(fewo.amenities);
+let amenitiesArray = JSON.parse(fewo.amenities); // Hier wird der String geparst
 
 Papa.parse('reviews.csv', {
     download: true,
@@ -73,7 +73,9 @@ Papa.parse('reviews.csv', {
 
         // Auf 10 Limitiert mit for - Schleife
         for (let i = 0; i < 10 ; i++) {
-            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";
+            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";  //  !!!!!!!!!!!!!!!!!!!! HIER WIRD ÜBER DAS ARRAY GEGANGEN UND AUSGEGEBEN
+                                                                                // Ohne das, geht es nicht, da ich so nicht über einen STRING gehen kann.
+                                                                                //Vielleicht wieder zurück mit Stringify
         }
 
         innerText_besonderheiten += "<p> -- und mehr! -- </p>"
@@ -84,10 +86,21 @@ Papa.parse('reviews.csv', {
 
 
 
+    // Map
+
+let mapDiv = document.getElementById("map");
+
+let innerText_newmap = "<iframe width=\"300\" height=\"450\" src=\"https://maps.google.com/maps?q="+fewo.latitude+","+fewo.longitude+"&hl=de&z=14&amp;output=embed\"></iframe>";
+
+mapDiv.innerHTML = innerText_newmap
+
+
 
 
 
 // Bewertungen
+
+
 
 function bewertungen5() {
     let divAlle = document.getElementById("bewertung")
