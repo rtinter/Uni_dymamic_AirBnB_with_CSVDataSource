@@ -1,7 +1,10 @@
 
 let fewo = JSON.parse(localStorage.getItem("fewo"));
+if (fewo.id === null)
+    open("Fehler.html")
 let reviews = []
 let amenitiesArray = JSON.parse(fewo.amenities); // Hier wird der String geparst
+let CalendarArray = []
 
 Papa.parse('reviews.csv', {
     download: true,
@@ -13,8 +16,22 @@ Papa.parse('reviews.csv', {
                 reviews.push(review)
             }
         });
-        console.log(reviews)
     },
+});
+
+Papa.parse('calendar.csv', {
+    download: true,
+    header: true,
+    skipEmptyLines: 'greedy',
+    complete: (results) => {
+        results.data.forEach(dates => {
+            if (dates.listing_id === fewo.id) {
+                CalendarArray.push(dates)
+            }
+        });
+        funz_entlich()
+    },
+    
 });
 
 
@@ -95,45 +112,69 @@ function besonderheiten1() {
 
 const now = new Date(); // das aktuelle Datum und Uhrzeit
 const currentMonth = now.getMonth(); // der aktuelle Monat (0-11)
-const currentDate = now.getDate(); // der aktuelle Tag des Monats (1-31)
+const currentYear = now.getFullYear(); // der aktuelle Tag des Monats (1-31)
+console.log(currentMonth, currentYear)
+console.log()
+
+
+const days = get_days_for_month(currentYear, currentMonth)
+
+console.log(days)
 
 
 function updateCalendar(month, year) {
     // hier können Sie eine Datenquelle abrufen, um die Belegungen und Preise für den angegebenen Monat und das Jahr zu erhalten
-    
+
     // berechnen Sie die Anzahl der Tage im angegebenen Monat und Jahr
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    
+
     // finden Sie den ersten Tag des Monats (0 = Sonntag, 1 = Montag, usw.)
     const firstDayOfMonth = new Date(year, month, 1).getDay();
-    
+
     // finden Sie die Tabellenzellen für jeden Tag des Monats
     const cells = document.querySelectorAll('table tbody td');
-    
+
     // aktualisieren Sie die Tabellenzellen für jeden Tag des Monats
     let day = 1;
+
+
     for (let i = 0; i < cells.length; i++) {
-      // wenn wir noch nicht am ersten Tag des Monats sind, lassen Sie die Zelle leer
-      if (i < firstDayOfMonth) {
-        cells[i].textContent = '';
-      } else if (day <= daysInMonth) {
-        // ansonsten fügen Sie den Tag in die Zelle ein
-        cells[i].textContent = day;
-        day++;
-      } else {
-        // wenn wir das Ende des Monats erreicht haben, lassen Sie die restlichen Zellen leer
-        cells[i].textContent = '';
-      }
+        // wenn wir noch nicht am ersten Tag des Monats sind, lassen Sie die Zelle leer
+        if (i < firstDayOfMonth) {
+            cells[i].textContent = '';
+        } else if (day <= daysInMonth) {
+            // ansonsten fügen Sie den Tag in die Zelle ein
+            cells[i].textContent = day;
+            day++;
+        } else {
+            // wenn wir das Ende des Monats erreicht haben, lassen Sie die restlichen Zellen leer
+            cells[i].textContent = '';
+        }
     }
-  }
-  
-  // rufen Sie die Funktion auf, um den Kalender für den aktuellen Monat zu aktualisieren
-  updateCalendar(currentMonth, now.getFullYear());
-  
+}
 
+// rufen Sie die Funktion auf, um den Kalender für den aktuellen Monat zu aktualisieren
+updateCalendar(currentMonth, now.getFullYear());
 
+function funz_entlich() {
 
+    for (const date of days) {
+        console.log(date)
+        let entry = CalendarArray.find(entry => {
+            const d = new Date(entry.date);
+            return d.getDate() == date.getDate()
+                && d.getFullYear() == date.getFullYear();
 
+        })
+        console.log(entry.available)
+
+        if (entry != undefined) {
+
+        }
+    }
+
+    CalendarArray
+}
 
 
 
@@ -200,4 +241,17 @@ function alleAnzeigen() {
         divAlle.innerHTML += divEinzel
     }
     divAlle.insertAdjacentHTML("afterend", "<button id=\"wenigerAnzeigen\" class=\"button\" onclick=\"bewertungen5()\" >weniger Anzeigen</button>")
+}
+
+
+function get_days_for_month(year, month) {
+    let date = new Date(year, month, 1);
+    let dates = [];
+    let i = 0;
+    while (date.getMonth() === month) {
+        dates.push(new Date(date));
+        date.setDate(date.getDate() + 1);
+        i++;
+    }
+    return dates;
 }
