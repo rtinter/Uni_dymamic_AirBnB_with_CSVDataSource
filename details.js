@@ -203,6 +203,7 @@ function updateCalendar(month, year) {
         } else if (day <= daysInMonth) {
 
             cells[i].textContent = day;
+            
             pricefürtag=price[day-1]
             if(availabilityArray[day-1] === "t") {
                 cells[i].className = "verfuegbar"
