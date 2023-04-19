@@ -118,7 +118,7 @@ function get_days_for_month(year, month) {
     let date = new Date(year, month, 1);
     let dates = [];
     let i = 0;
-    while (date.getMonth() === month) {
+    while(date.getMonth() === month) {
         dates.push(new Date(date));
         date.setDate(date.getDate() + 1);
         i++;
@@ -156,6 +156,8 @@ function monatZurueck(){
 }
 
 
+
+
 function updateCalendar(month, year) {
 
 
@@ -168,7 +170,7 @@ function updateCalendar(month, year) {
             return d.getDate() == date.getDate() && d.getFullYear() == date.getFullYear();
         });
 
-        
+
 
         if (suche.available !== undefined) {
             availabilityArray.push(suche.available)
@@ -186,7 +188,7 @@ function updateCalendar(month, year) {
     }
 
     document.getElementById("monthYear").innerHTML= monate[currentMonth]+" "+ String(currentYear);
-    
+
 
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const firstDayOfMonth = new Date(year, month, 1).getDay();
@@ -201,10 +203,13 @@ function updateCalendar(month, year) {
         } else if (day <= daysInMonth) {
 
             cells[i].textContent = day;
-
-            if (availabilityArray[day - 1] === "t") {
+            pricefürtag=price[day-1]
+            if(availabilityArray[day-1] === "t") {
                 cells[i].className = "verfuegbar"
-            } else {
+                cells[i].addEventListener('click', function() {
+                    alert(pricefürtag);
+                });
+            }else{
                 cells[i].className = "nicht_verfuegbar"
             }
             day++;
