@@ -80,13 +80,16 @@
       <div class="kalender">
 
         <div>
-          <button id="prev-month-btn" onclick="updateCalendar(currentMonth + 1, currentYear)">Nächster Monat</button>
-          <button id="next-month-btn" onclick="updateCalendar(currentMonth -1, currentYear)">Nächster Monat</button>
+          <button id="prev-month-btn" onclick="monatZurueck(), updateCalendar(currentMonth, currentYear)">Nächster Monat</button>
+          <button id="next-month-btn" onclick="monatVor(),updateCalendar(currentMonth, currentYear)">Nächster Monat</button>
 
         </div>
 
         <table>
           <thead>
+            <tr>
+              <th id="monthYear" colspan="7">April 2023</th>
+            </tr>
           <tr>
             <th>Mo</th>
             <th>Di</th>

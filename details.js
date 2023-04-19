@@ -5,6 +5,7 @@ if (fewo.id === null)
 let reviews = []
 let amenitiesArray = JSON.parse(fewo.amenities); // Hier wird der String geparst
 let CalendarArray = []
+const monate =["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
 
 Papa.parse('reviews.csv', {
     download: true,
@@ -117,12 +118,11 @@ function get_days_for_month(year, month) {
     let date = new Date(year, month, 1);
     let dates = [];
     let i = 0;
-    while(date.getMonth() === month) {
+    while (date.getMonth() === month) {
         dates.push(new Date(date));
         date.setDate(date.getDate() + 1);
         i++;
     }
-    console.log(dates)
     return dates;
 }
 
@@ -133,43 +133,63 @@ das aktuelle Jahr und die anzahl der Tage des monats heraus und schmeißen sie i
 */
 
 const now = new Date() // das aktuelle Datum und Uhrzeit
-const currentMonth = now.getMonth() // der aktuelle Monat (0-11)
-const currentYear = now.getFullYear() // der aktuelle Tag des Monats (1-31)
-const days = get_days_for_month(currentYear, currentMonth)  // Objekt des jeweiligen Tages
+let currentMonth = now.getMonth() // der aktuelle Monat (0-11)
+let currentYear = now.getFullYear() // der aktuelle Tag des Monats (1-31)
+let days = get_days_for_month(currentYear, currentMonth)  // Objekt des jeweiligen Tages
 
+function monatVor(){
+    currentMonth+=1
+    if (currentMonth === 12){
+        currentMonth=0
+        currentYear+=1
+    }
+    days = get_days_for_month(currentYear, currentMonth)
+}
+
+function monatZurueck(){
+    currentMonth-=1
+    if (currentMonth === -1){
+        currentMonth=11
+        currentYear-=1
+    }
+    days = get_days_for_month(currentYear, currentMonth)
+}
 
 
 function updateCalendar(month, year) {
 
 
-        let availabilityArray = [];
-        let price = [];
+    let availabilityArray = [];
+    let price = [];
 
-        for (const date of days) {
-            let suche = CalendarArray.find(suche => {
-                const d = new Date(suche.date);
-                return d.getDate() == date.getDate() && d.getFullYear() == date.getFullYear();
-            });
+    for (const date of days) {
+        let suche = CalendarArray.find(suche => {
+            const d = new Date(suche.date);
+            return d.getDate() == date.getDate() && d.getFullYear() == date.getFullYear();
+        });
 
-            if (suche.available !== undefined) {
-                availabilityArray.push(suche.available)
+        
 
-            }
-            else {
-                availabilityArray.push("f")
-            }
-            if(suche.price !== undefined){
-                price.push(suche.price)
-            }
-            else{
-                availabilityArray.push("?")
-            }
+        if (suche.available !== undefined) {
+            availabilityArray.push(suche.available)
+            console.log(suche.available)
         }
+        else {
+            availabilityArray.push("f")
+        }
+        if (suche.price !== undefined) {
+            price.push(suche.price)
+        }
+        else {
+            availabilityArray.push("?")
+        }
+    }
+
+    document.getElementById("monthYear").innerHTML= monate[currentMonth]+" "+ String(currentYear);
+    
 
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-
     const firstDayOfMonth = new Date(year, month, 1).getDay();
-
     const cells = document.querySelectorAll('table tbody td');
 
     let day = 1;
@@ -182,9 +202,9 @@ function updateCalendar(month, year) {
 
             cells[i].textContent = day;
 
-            if(availabilityArray[day-1] === "t") {
+            if (availabilityArray[day - 1] === "t") {
                 cells[i].className = "verfuegbar"
-            }else{
+            } else {
                 cells[i].className = "nicht_verfuegbar"
             }
             day++;
