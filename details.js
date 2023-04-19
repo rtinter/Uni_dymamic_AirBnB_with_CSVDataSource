@@ -26,12 +26,11 @@ Papa.parse('calendar.csv', {
     complete: (results) => {
         results.data.forEach(dates => {
             if (dates.listing_id === fewo.id) {
-                CalendarArray.push(dates)
+                CalendarArray.push(dates)       //Hier sind alle objekte drin, welche der geklickten ID entsprechen
             }
         });
-        funz_entlich()
+        updateCalendar(currentMonth, now.getFullYear())
     },
-    
 });
 
 
@@ -90,9 +89,8 @@ function besonderheiten1() {
     // Auf 10 Limitiert mit for - Schleife
     if (amenitiesArray != undefined) {
         for (let i = 0; i < 10; i++) {
-            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";  //  !!!!!!!!!!!!!!!!!!!! HIER WIRD ÜBER DAS ARRAY GEGANGEN UND AUSGEGEBEN
-            // Ohne das, geht es nicht, da ich so nicht über einen STRING gehen kann.
-            //Vielleicht wieder zurück mit Stringify
+            innerText_besonderheiten += "<p>" + amenitiesArray[i] + "</p>";
+
         }
 
         if (amenitiesArray.length > 10) {
@@ -106,78 +104,98 @@ function besonderheiten1() {
 
 
 
-
-
 //Kalender sachen ma schaun
 
-const now = new Date(); // das aktuelle Datum und Uhrzeit
-const currentMonth = now.getMonth(); // der aktuelle Monat (0-11)
-const currentYear = now.getFullYear(); // der aktuelle Tag des Monats (1-31)
-console.log(currentMonth, currentYear)
-console.log()
 
+/* Es wird jahr und monat übergeben. Dann wird ein date objekt erstellt.
+Die Objektargumente sind Jahr, Monat und der Tag des neuen Objekts wird auf 1 gesetzt.
+Solange der monate in date der selbe ist wie der argumentmonat wird der Tag in das Array "dates" gepusht.
+Das datearray wird ausgegeben => Es beinhaltet das komplette Datum ([Sat Apr 01 2023 00:00:00 GMT+0200 (Mitteleuropäische Sommerzeit) Wäre ein Element)
+*/
 
-const days = get_days_for_month(currentYear, currentMonth)
+function get_days_for_month(year, month) {
+    let date = new Date(year, month, 1);
+    let dates = [];
+    let i = 0;
+    while(date.getMonth() === month) {
+        dates.push(new Date(date));
+        date.setDate(date.getDate() + 1);
+        i++;
+    }
+    console.log(dates)
+    return dates;
+}
 
-console.log(days)
+/*
+Insgesamt wird werden wird hier das aktuelle Datum gesucht um damit dann sowohl akt. Monat, als auch akt. Jahr heraus
+zu bekommen. Diese werden dann an die get_days_for_month funktion übergeben. So finden wir den aktuellen Monat,
+das aktuelle Jahr und die anzahl der Tage des monats heraus und schmeißen sie in ein array
+*/
+
+const now = new Date() // das aktuelle Datum und Uhrzeit
+const currentMonth = now.getMonth() // der aktuelle Monat (0-11)
+const currentYear = now.getFullYear() // der aktuelle Tag des Monats (1-31)
+const days = get_days_for_month(currentYear, currentMonth)  // Objekt des jeweiligen Tages
+
 
 
 function updateCalendar(month, year) {
-    // hier können Sie eine Datenquelle abrufen, um die Belegungen und Preise für den angegebenen Monat und das Jahr zu erhalten
 
-    // berechnen Sie die Anzahl der Tage im angegebenen Monat und Jahr
+
+        let availabilityArray = [];
+        let price = [];
+
+        for (const date of days) {
+            let suche = CalendarArray.find(suche => {
+                const d = new Date(suche.date);
+                return d.getDate() == date.getDate() && d.getFullYear() == date.getFullYear();
+            });
+
+            if (suche.available !== undefined) {
+                availabilityArray.push(suche.available)
+
+            }
+            else {
+                availabilityArray.push("f")
+            }
+            if(suche.price !== undefined){
+                price.push(suche.price)
+            }
+            else{
+                availabilityArray.push("?")
+            }
+        }
+
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-    // finden Sie den ersten Tag des Monats (0 = Sonntag, 1 = Montag, usw.)
     const firstDayOfMonth = new Date(year, month, 1).getDay();
 
-    // finden Sie die Tabellenzellen für jeden Tag des Monats
     const cells = document.querySelectorAll('table tbody td');
 
-    // aktualisieren Sie die Tabellenzellen für jeden Tag des Monats
     let day = 1;
-
-
     for (let i = 0; i < cells.length; i++) {
-        // wenn wir noch nicht am ersten Tag des Monats sind, lassen Sie die Zelle leer
+        cells[i].className = "";
         if (i < firstDayOfMonth) {
             cells[i].textContent = '';
+
         } else if (day <= daysInMonth) {
-            // ansonsten fügen Sie den Tag in die Zelle ein
+
             cells[i].textContent = day;
+
+            if(availabilityArray[day-1] === "t") {
+                cells[i].className = "verfuegbar"
+            }else{
+                cells[i].className = "nicht_verfuegbar"
+            }
             day++;
+
+
         } else {
-            // wenn wir das Ende des Monats erreicht haben, lassen Sie die restlichen Zellen leer
             cells[i].textContent = '';
-        }
-    }
-}
-
-// rufen Sie die Funktion auf, um den Kalender für den aktuellen Monat zu aktualisieren
-updateCalendar(currentMonth, now.getFullYear());
-
-function funz_entlich() {
-
-    for (const date of days) {
-        console.log(date)
-        let entry = CalendarArray.find(entry => {
-            const d = new Date(entry.date);
-            return d.getDate() == date.getDate()
-                && d.getFullYear() == date.getFullYear();
-
-        })
-        console.log(entry.available)
-
-        if (entry != undefined) {
 
         }
     }
-
-    CalendarArray
 }
-
-
-
 
 
 
@@ -241,17 +259,4 @@ function alleAnzeigen() {
         divAlle.innerHTML += divEinzel
     }
     divAlle.insertAdjacentHTML("afterend", "<button id=\"wenigerAnzeigen\" class=\"button\" onclick=\"bewertungen5()\" >weniger Anzeigen</button>")
-}
-
-
-function get_days_for_month(year, month) {
-    let date = new Date(year, month, 1);
-    let dates = [];
-    let i = 0;
-    while (date.getMonth() === month) {
-        dates.push(new Date(date));
-        date.setDate(date.getDate() + 1);
-        i++;
-    }
-    return dates;
 }

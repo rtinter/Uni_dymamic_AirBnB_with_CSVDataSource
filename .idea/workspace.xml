@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Besonderheiten und Ueber Unterkunft mit Array fuer die jeweiligen JSON objekte">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Besonderheiten, über etc.&#10;bug ist kommentiert!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,14 @@
       <workItem from="1681734438944" duration="4834000" />
       <workItem from="1681739290446" duration="1506000" />
       <workItem from="1681741411263" duration="9106000" />
-      <workItem from="1681809649342" duration="2144000" />
+      <workItem from="1681809649342" duration="3012000" />
+      <workItem from="1681817304933" duration="453000" />
+      <workItem from="1681817761993" duration="340000" />
+      <workItem from="1681818104380" duration="9536000" />
+      <workItem from="1681836509833" duration="976000" />
+      <workItem from="1681843453124" duration="20847000" />
+      <workItem from="1681905140472" duration="964000" />
+      <workItem from="1681910686921" duration="3888000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -343,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681805997582</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Besonderheiten, über etc.&#10;bug ist kommentiert!">
+      <created>1681815914917</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1681815914917</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test, um das mergen zu verstehen" />
     <MESSAGE value="Änderungen Rückgängig gemacht" />
     <MESSAGE value="Test 56.0" />
     <MESSAGE value="Überschrift etc." />
@@ -398,6 +412,7 @@
     <MESSAGE value="Bild/ Gastgeber" />
     <MESSAGE value="komplett" />
     <MESSAGE value="Besonderheiten und Ueber Unterkunft mit Array fuer die jeweiligen JSON objekte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Besonderheiten und Ueber Unterkunft mit Array fuer die jeweiligen JSON objekte" />
+    <MESSAGE value="Besonderheiten, über etc.&#10;bug ist kommentiert!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Besonderheiten, über etc.&#10;bug ist kommentiert!" />
   </component>
 </project>
