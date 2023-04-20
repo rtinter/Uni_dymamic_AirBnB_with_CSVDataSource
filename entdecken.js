@@ -12,6 +12,24 @@ Papa.parse('listings.csv', {
     },
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function filtern() {
     let price = parseFloat(document.getElementById("maxPreis").value);
     let stars = parseFloat(document.getElementById("rating").value);

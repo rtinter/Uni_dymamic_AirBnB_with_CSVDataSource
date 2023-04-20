@@ -8,6 +8,17 @@
 /* Navbar
 __________________________________________________________________________________________________________
 */
+header input{
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.212);
+    padding: 0 10px;
+    background-color: rgba(245, 245, 245, 0.37);
+
+}
 
 .navbar {
     top: 0;
@@ -51,6 +62,58 @@ header {
     border: 1px solid silver;
     border-radius: 0 0 20px 20px;
 }
+
+
+
+
+/* FILTER
+-----------------------------------------------------------------------------------------------------------
+*/
+
+.filterleiste{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.filterItem > *{
+    height: 50px;
+    justify-content: space-between;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.212);
+    -webkit-appearance: none;
+}
+
+.filterInput{
+    width: 160px;
+    background-color: rgba(245, 245, 245, 0.37);
+}
+
+input{
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.filterItem button{
+    width: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.filterButton{
+    display:flex;
+    justify-content: center;
+}
+
+
 
 /* Mittelteil, Bildergalerie etc.
 __________________________________________________________________________________________________________
@@ -156,6 +219,10 @@ a {
 /* Entdecken_Seite
 __________________________________________________________________________________________________________
  */
+.entdeckenUeberschrift{
+    display:flex;
+    justify-content: center;
+}
 
 .entdecken h1 {
     margin-bottom: 1em;
@@ -272,6 +339,7 @@ ________________________________________________________________________________
 /* Details_Seite
 __________________________________________________________________________________________________________
  */
+
 .überschrift_details{
     display: flex;
     flex-direction: column;
@@ -340,10 +408,12 @@ ________________________________________________________________________________
 .ueber .col1 {
     margin-right: 30px;
     flex-basis: 50%;
+    margin-left: 30px;
 }
 
 .ueber .col2 {
     margin-left: 30px;
+    margin-right: 30px;
     max-width: 50%;
     border-left: solid;
     border-color: lightgrey;
@@ -389,26 +459,25 @@ table {
     border-collapse: collapse;
 }
 
-/* Setzen des Styles für die Tabellenzellen */
 td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
 }
 
-/* Setzen des Styles für verfügbare Tage */
 .verfuegbar {
-    background-color: green;
+    background-color: rgba(32, 192, 36, 0.52);
     color: white;
 }
 
-/* Setzen des Styles für nicht verfügbare Tage */
+.verfuegbar:hover{
+    cursor: pointer;
+}
+
 .nicht_verfuegbar {
-    background-color: red;
+    background-color: rgba(169, 38, 38, 0.84);
     color: white;
 }
-
-
 
 .details {
     width: 70%;
@@ -436,6 +505,31 @@ td {
     color: #fd7f00;
     transition: 0.15s ease-in;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
+.Kalender_Überschrift{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Kalender_Überschrift button{
+    border:none;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.212);
+}
+
+#monthYear{
+    font-size: large;
+}
+
+.kalender{
+    width: 300px;
+}
+
+
 
 /* Bewertungen
 __________________________________________________________________________________________________________

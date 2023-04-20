@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Kalender available + price" />
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="test 123">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entdecken.html" beforeDir="false" afterPath="$PROJECT_DIR$/Entdecken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fehler.html" beforeDir="false" afterPath="$PROJECT_DIR$/Fehler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calaca.html" beforeDir="false" afterPath="$PROJECT_DIR$/calaca.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +144,10 @@
       <workItem from="1681843453124" duration="20847000" />
       <workItem from="1681905140472" duration="964000" />
       <workItem from="1681910686921" duration="7682000" />
-      <workItem from="1681919907861" duration="339000" />
+      <workItem from="1681919907861" duration="400000" />
+      <workItem from="1681968859766" duration="11765000" />
+      <workItem from="1681981562556" duration="533000" />
+      <workItem from="1681982098683" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -368,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681920121941</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="test 123">
+      <created>1681920259812</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1681920259812</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test 56.0" />
     <MESSAGE value="Überschrift etc." />
     <MESSAGE value="redesign Homepage&#10;+&#10;Navbar integriert" />
     <MESSAGE value="Bildtext und Entdecken Button&#10;Transition effekte Button und Navbar" />
@@ -423,6 +441,7 @@
     <MESSAGE value="Besonderheiten und Ueber Unterkunft mit Array fuer die jeweiligen JSON objekte" />
     <MESSAGE value="Besonderheiten, über etc.&#10;bug ist kommentiert!" />
     <MESSAGE value="Kalender available + price" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kalender available + price" />
+    <MESSAGE value="test 123" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 123" />
   </component>
 </project>
