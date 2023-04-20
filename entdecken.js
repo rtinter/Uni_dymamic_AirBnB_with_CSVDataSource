@@ -14,22 +14,6 @@ Papa.parse('listings.csv', {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function filtern() {
     let price = parseFloat(document.getElementById("maxPreis").value);
     let stars = parseFloat(document.getElementById("rating").value);
@@ -39,23 +23,38 @@ function filtern() {
     let newlist = []
     let data = entdeckenListe;
 
+    let maxPrice = price || 10000;
+    let minStars = stars || 0;
+
     for (let i = 0; i < data.length; i++) {
-        priceString = data[i]["price"]
-        if (priceString !== undefined)
+        let priceString = data[i]["price"];
+        let dataPrice, dataStars, dataName, dataTyp, dataStadtteil;
+
+        if (priceString !== undefined) {
             dataPrice = parseFloat(priceString.replace(/[^\d.]/g, ""));
-        dataStars = parseFloat(data[i]["review_scores_rating"])
-        if (data[i]["name"] !== undefined)
-            dataName = data[i]["name"].toUpperCase()
-        if (data[i]["property_type"] !== undefined)
-            dataTyp = data[i]["property_type"].toUpperCase()
-        if (data[i]["neighbourhood_cleansed"] !== undefined)
-            dataStadtteil = data[i]["neighbourhood_cleansed"].toUpperCase()
+        }
 
+        if (data[i]["review_scores_rating"] !== undefined) {
+            dataStars = parseFloat(data[i]["review_scores_rating"]);
+        }
 
-        if (dataPrice <= price && dataStars >= stars && dataName.includes(name) && dataTyp.includes(typ) && dataStadtteil.includes(Stadtteil)) {
-            newlist.push(data[i])
+        if (data[i]["name"] !== undefined) {
+            dataName = data[i]["name"].toUpperCase();
+        }
+
+        if (data[i]["property_type"] !== undefined) {
+            dataTyp = data[i]["property_type"].toUpperCase();
+        }
+
+        if (data[i]["neighbourhood_cleansed"] !== undefined) {
+            dataStadtteil = data[i]["neighbourhood_cleansed"].toUpperCase();
+        }
+
+        if (dataPrice <= maxPrice && dataStars >= minStars && dataName.includes(name.toUpperCase()) && dataTyp.includes(typ.toUpperCase()) && dataStadtteil.includes(Stadtteil.toUpperCase())) {
+            newlist.push(data[i]);
         }
     }
+
 
     newlist.sort(function (a, b) {
         if (parseFloat(a.price.replace(/[^\d.]/g, "")) < parseFloat(b.price.replace(/[^\d.]/g, ""))) return -1;
@@ -149,7 +148,7 @@ function createEntdecken(data) {
         div += "<a href=\"Details.html\" onclick=\"storeData(" + data[i]["id"] + ")\">" + "<img loading=\"lazy\" src=\"" + data[i]["picture_url"] + "\">" + "</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
         div += "<p>" + data[i]["room_type"] + "</p>"
-        div += "<p>" + data[i]["host_name"] + "</p>"
+        div += "<p>" + data[i]["neighbourhood_cleansed"] + "</p>"
         div += "<p>" + data[i]["price"] + "</p>"
         div += "<span>" + data[i]["review_scores_rating"] + " &#9733;</span>"
         div += "<p>" + data[i]["number_of_reviews"] + " Bewertungen" + "</p>"
