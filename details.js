@@ -239,9 +239,34 @@ mapDiv.innerHTML = innerText_newmap
 
 
 
+
+
+
+
+
+
+
 // Bewertungen
 
 
+let bewertungen_gesamt = document.getElementById("bewertungen_gesamt")
+    bewertungen_gesamt.innerHTML = ""
+let innerText_bewertungen_gesamt = fewo.review_scores_rating + " &#9733; - " + fewo.number_of_reviews + " Bewertungen"
+    bewertungen_gesamt.innerHTML = innerText_bewertungen_gesamt
+
+let Dreibewertungen = document.getElementById('firstThree')
+    Dreibewertungen.innerHTML = ""
+let innerText_Dreibewertungen =  "<p><span>" + fewo.review_scores_accuracy + "</span></p>"
+    innerText_Dreibewertungen += "<p><span>" + fewo.review_scores_cleanliness + "</span></p>"
+    innerText_Dreibewertungen += "<p><span>" + fewo.review_scores_checkin + "</span></p>"
+    Dreibewertungen.innerHTML = innerText_Dreibewertungen
+
+let Sechsbewertungen = document.getElementById('secondThree')
+    Sechsbewertungen.innerHTML = ""
+let innerText_Sechsbewertungen =  "<p><span>" + fewo.review_scores_communication + "</span></p>"
+    innerText_Sechsbewertungen += "<p><span>" + fewo.review_scores_location + "</span></p>"
+    innerText_Sechsbewertungen += "<p><span>" + fewo.review_scores_value + "</span></p>"
+    Sechsbewertungen.innerHTML = innerText_Dreibewertungen
 
 function bewertungen5() {
     let divAlle = document.getElementById("bewertung")

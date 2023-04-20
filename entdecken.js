@@ -8,50 +8,51 @@ Papa.parse('listings.csv', {
     complete: (results) => {
         entdeckenListe = results.data
         filterliste = results.data
-        createEntdecken(results.data);
+        createEntdecken(results.data); //Bau der Seite mit allen Wohnungen
     },
 });
 
 
 
 function filtern() {
-    let price = parseFloat(document.getElementById("maxPreis").value);
-    let stars = parseFloat(document.getElementById("rating").value);
+    let price = parseFloat(document.getElementById("maxPreis").value)  //momentaner Wert in float.
+    let stars = parseFloat(document.getElementById("rating").value)
     let name = document.getElementById("name").value.toUpperCase()
     let typ = document.getElementById("type").value.toUpperCase()
     let Stadtteil = document.getElementById("stadtteil").value.toUpperCase()
     let newlist = []
-    let data = entdeckenListe;
+    let data = entdeckenListe // Enthalten sind alle Daten der csv Datei
 
     let maxPrice = price || 10000;
     let minStars = stars || 0;
 
-    for (let i = 0; i < data.length; i++) {
-        let priceString = data[i]["price"];
-        let dataPrice, dataStars, dataName, dataTyp, dataStadtteil;
+    for (let i = 0; i < data.length; i++) { //iteriert über die komplette Datenliste.
+        let priceString = data[i]["price"]    //Alle "price" aus der Liste
+        let dataPrice, dataStars, dataName, dataTyp, dataStadtteil
 
         if (priceString !== undefined) {
-            dataPrice = parseFloat(priceString.replace(/[^\d.]/g, ""));
+            dataPrice = parseFloat(priceString.replace(/[^\d.]/g, ""))
         }
 
         if (data[i]["review_scores_rating"] !== undefined) {
-            dataStars = parseFloat(data[i]["review_scores_rating"]);
+            dataStars = parseFloat(data[i]["review_scores_rating"])
         }
 
         if (data[i]["name"] !== undefined) {
-            dataName = data[i]["name"].toUpperCase();
+            dataName = data[i]["name"].toUpperCase()
         }
 
         if (data[i]["property_type"] !== undefined) {
-            dataTyp = data[i]["property_type"].toUpperCase();
+            dataTyp = data[i]["property_type"].toUpperCase()
         }
 
         if (data[i]["neighbourhood_cleansed"] !== undefined) {
-            dataStadtteil = data[i]["neighbourhood_cleansed"].toUpperCase();
+            dataStadtteil = data[i]["neighbourhood_cleansed"].toUpperCase()
         }
 
+        // logische Verbindung der filteroption maxprice / minstars
         if (dataPrice <= maxPrice && dataStars >= minStars && dataName.includes(name.toUpperCase()) && dataTyp.includes(typ.toUpperCase()) && dataStadtteil.includes(Stadtteil.toUpperCase())) {
-            newlist.push(data[i]);
+            newlist.push(data[i]); //Push der gewählten optionen ins newlist Array
         }
     }
 
@@ -62,8 +63,8 @@ function filtern() {
         return 0;
     });
 
-    filterliste = newlist
-    createEntdecken(newlist)
+    filterliste = newlist  // Weisen der filterlist (vorher alle Daten) => gefilterte Daten zu
+    createEntdecken(newlist) //baue der gefilterten Entdeckenseite
 }
 
 function aufsteigendPrice() {
@@ -143,7 +144,7 @@ function createEntdecken(data) {
     }
 
 
-    for (let i = anzeigeAnfang; i < anzeigeEnde; i++) {
+    for (let i = anzeigeAnfang; i < anzeigeEnde; i++) {  // Iterieren über die Anzahl der Wohnungen die zur Auswahl passen
         let div = "<div class=\"colums1\">";
         div += "<a href=\"Details.html\" onclick=\"storeData(" + data[i]["id"] + ")\">" + "<img loading=\"lazy\" src=\"" + data[i]["picture_url"] + "\">" + "</a>";
         div += "<h5>" + data[i]["name"] + "</h5>"
@@ -155,9 +156,10 @@ function createEntdecken(data) {
         div += "</div> <br>"
         anzeige.innerHTML += div
     }
-
+        //Seeeeehr langer String für colums1 inkl. der geparsten Werte zur jeweiligen Wohnung
 }
 
+    //Übergabe in den storage als String
 function storeData(id) {
     filterliste.forEach(fewo => {
         if (fewo.id == id) {

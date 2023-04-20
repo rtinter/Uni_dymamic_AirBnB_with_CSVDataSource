@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="styling Kalender, Filter, Karte">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Bewertungen der einzelnen Kategorien ebenfalls interaktiv aus csv">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entdecken.html" beforeDir="false" afterPath="$PROJECT_DIR$/Entdecken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +148,10 @@
       <workItem from="1681982098683" duration="364000" />
       <workItem from="1681982646444" duration="111000" />
       <workItem from="1681987334650" duration="2281000" />
-      <workItem from="1681993061426" duration="1341000" />
+      <workItem from="1681993061426" duration="1527000" />
+      <workItem from="1681996161772" duration="78000" />
+      <workItem from="1681996322661" duration="762000" />
+      <workItem from="1682001727406" duration="3169000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -393,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681982408650</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Filter funktion mit bool variablen erweitert - geht jetzt wieder! Setzt stars und maxpreis auf 0 oder 10000.&#10;&#10;entdecken unten stadtteile hinzugefügt um filterfunktion besser zu sehen. Dafür Hostname entfernt. interessiert doch eigentlich beim surchsuchen eh nicht">
+      <created>1681994551588</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681994551588</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,8 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="redesign Homepage&#10;+&#10;Navbar integriert" />
-    <MESSAGE value="Bildtext und Entdecken Button&#10;Transition effekte Button und Navbar" />
     <MESSAGE value="hover effekt über der Bildergalerie @homepage" />
     <MESSAGE value="Entdecken Seite. &#10;Übernehmen der Nav-bar&#10;Flexbox, Bilddesign mit Bildern und Beschreibung&#10;Einfügen von Bewertungen unter den Bildern" />
     <MESSAGE value="Index mit Entdecken sowohl via button, als auch viele navbar verbunden" />
@@ -448,6 +458,8 @@
     <MESSAGE value="Kalender available + price" />
     <MESSAGE value="test 123" />
     <MESSAGE value="styling Kalender, Filter, Karte" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling Kalender, Filter, Karte" />
+    <MESSAGE value="Filter funktion mit bool variablen erweitert - geht jetzt wieder! Setzt stars und maxpreis auf 0 oder 10000.&#10;&#10;entdecken unten stadtteile hinzugefügt um filterfunktion besser zu sehen. Dafür Hostname entfernt. interessiert doch eigentlich beim surchsuchen eh nicht" />
+    <MESSAGE value="Bewertungen der einzelnen Kategorien ebenfalls interaktiv aus csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bewertungen der einzelnen Kategorien ebenfalls interaktiv aus csv" />
   </component>
 </project>

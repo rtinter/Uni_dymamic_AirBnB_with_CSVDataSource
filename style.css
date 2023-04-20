@@ -138,7 +138,7 @@ section {
 }
 
 .col {
-    width: 40%;
+    width: 100%;
 }
 
 .row h1 {
@@ -156,41 +156,24 @@ section {
 
 .bildergalerie {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer;
     max-width: 800px;
+    align-items: center;
 }
 
 .bildergalerie img {
-    width: 300px;
-    max-width: 300px;
+    width: 450px;
+    max-width: 450px;
     margin: 10px;
     border-radius: 5px;
-    height: 220px;
-    max-height: 220px;
+    height: 320px;
+    max-height: 320px;
 
 }
 
-.hotel1 p {
-    padding-left: 90px;
-    font-size: 2vh;
-}
-
-.hotel2 p {
-    padding-left: 90px;
-    font-size: 2vh;
-}
-
-.hotel3 p {
-    padding-left: 90px;
-    font-size: 2vh;
-}
-
-.hotel4 p {
-    padding-left: 90px;
-    font-size: 2vh;
-}
 
 .button {
     margin-top: 1em;
@@ -211,10 +194,7 @@ a {
     transition: 0.15s;
 }
 
-.bildergalerie>* :hover {
-    color: #fd7f00;
-    transition: 0.15s ease-in;
-}
+
 
 /* Entdecken_Seite
 __________________________________________________________________________________________________________
@@ -537,6 +517,12 @@ button:hover{
 /* Bewertungen
 __________________________________________________________________________________________________________
 */
+.Bewertungen_gesamtUeberschrift{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: normal;
+}
 
 .bewertungen p{
     font-size: small;
