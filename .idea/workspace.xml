@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="Bewertungen der einzelnen Kategorien ebenfalls interaktiv aus csv">
+    <list default="true" id="7c906481-1e57-460e-97de-3095d4582b74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entdecken.html" beforeDir="false" afterPath="$PROJECT_DIR$/Entdecken.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entdecken.js" beforeDir="false" afterPath="$PROJECT_DIR$/entdecken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="e5bca12d-c50d-448a-bc3a-4f03dbe7adcc" />
-        <option name="url" value="https://github.com/rtinter/Airbnb_uni.git" />
+        <option name="url" value="https://github.com/rtinter/Uni_dymamic_AirBnB_with_CSVDataSource.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -151,7 +149,11 @@
       <workItem from="1681993061426" duration="1527000" />
       <workItem from="1681996161772" duration="78000" />
       <workItem from="1681996322661" duration="762000" />
-      <workItem from="1682001727406" duration="3169000" />
+      <workItem from="1682001727406" duration="3225000" />
+      <workItem from="1682006233673" duration="261000" />
+      <workItem from="1682006498049" duration="932000" />
+      <workItem from="1682055620109" duration="542000" />
+      <workItem from="1682056661198" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="White bug deleted">
       <created>1680182904867</created>
@@ -405,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681994551588</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Kategorien der einzelnen Bewertungen und gesamt ebenfalls aus csv dateien dynamisch">
+      <created>1682004958250</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1682004958250</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hover effekt über der Bildergalerie @homepage" />
     <MESSAGE value="Entdecken Seite. &#10;Übernehmen der Nav-bar&#10;Flexbox, Bilddesign mit Bildern und Beschreibung&#10;Einfügen von Bewertungen unter den Bildern" />
     <MESSAGE value="Index mit Entdecken sowohl via button, als auch viele navbar verbunden" />
     <MESSAGE value="new main" />
@@ -460,6 +468,7 @@
     <MESSAGE value="styling Kalender, Filter, Karte" />
     <MESSAGE value="Filter funktion mit bool variablen erweitert - geht jetzt wieder! Setzt stars und maxpreis auf 0 oder 10000.&#10;&#10;entdecken unten stadtteile hinzugefügt um filterfunktion besser zu sehen. Dafür Hostname entfernt. interessiert doch eigentlich beim surchsuchen eh nicht" />
     <MESSAGE value="Bewertungen der einzelnen Kategorien ebenfalls interaktiv aus csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bewertungen der einzelnen Kategorien ebenfalls interaktiv aus csv" />
+    <MESSAGE value="Kategorien der einzelnen Bewertungen und gesamt ebenfalls aus csv dateien dynamisch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kategorien der einzelnen Bewertungen und gesamt ebenfalls aus csv dateien dynamisch" />
   </component>
 </project>

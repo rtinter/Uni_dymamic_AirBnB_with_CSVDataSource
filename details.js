@@ -109,9 +109,9 @@ function besonderheiten1() {
 
 
 /* Es wird jahr und monat übergeben. Dann wird ein date objekt erstellt.
-Die Objektargumente sind Jahr, Monat und der Tag des neuen Objekts wird auf 1 gesetzt.
-Solange der monate in date der selbe ist wie der argumentmonat wird der Tag in das Array "dates" gepusht.
-Das datearray wird ausgegeben => Es beinhaltet das komplette Datum ([Sat Apr 01 2023 00:00:00 GMT+0200 (Mitteleuropäische Sommerzeit) Wäre ein Element)
+Die Objektargumente Jahr, Monat und der Tag des neuen Objekts wird auf 1 gesetzt.
+Solange der monate in date derselbe ist wie der argumentmonat wird der Tag in das Array "dates" gepusht.
+Das datearray wird ausgegeben => Es beinhaltet das komplette Datum ([Sat Apr 01 2023 00:00:00 GMT+0200 (Mitteleuropäische Sommerzeit) Waere ein Element)
 */
 
 function get_days_for_month(year, month) {
@@ -127,7 +127,7 @@ function get_days_for_month(year, month) {
 }
 
 /*
-Insgesamt wird werden wird hier das aktuelle Datum gesucht um damit dann sowohl akt. Monat, als auch akt. Jahr heraus
+Insgesamt wird hier das aktuelle Datum gesucht um damit dann sowohl akt. Monat, als auch akt. Jahr heraus
 zu bekommen. Diese werden dann an die get_days_for_month funktion übergeben. So finden wir den aktuellen Monat,
 das aktuelle Jahr und die anzahl der Tage des monats heraus und schmeißen sie in ein array
 */
@@ -196,19 +196,19 @@ function updateCalendar(month, year) {
 
     let day = 1;
     for (let i = 0; i < cells.length; i++) {
-        cells[i].className = "";
+        cells[i].className = ""; //Verfügbarkeit wird wieder herausgeloescht
         if (i < firstDayOfMonth) {
             cells[i].textContent = '';
 
         } else if (day <= daysInMonth) {
 
-            cells[i].textContent = day;
+            cells[i].textContent = day
             
             pricefürtag=price[day-1]
             if(availabilityArray[day-1] === "t") {
                 cells[i].className = "verfuegbar"
                 cells[i].addEventListener('click', function() {
-                    alert(pricefürtag);
+                    alert(pricefürtag)
                 });
             }else{
                 cells[i].className = "nicht_verfuegbar"
@@ -217,7 +217,7 @@ function updateCalendar(month, year) {
 
 
         } else {
-            cells[i].textContent = '';
+            cells[i].textContent = ''
 
         }
     }
@@ -234,13 +234,6 @@ let mapDiv = document.getElementById("map");
 let innerText_newmap = "<iframe width=\"300\" height=\"450\" src=\"https://maps.google.com/maps?q=" + fewo.latitude + "," + fewo.longitude + "&hl=de&z=14&amp;output=embed\"></iframe>";
 
 mapDiv.innerHTML = innerText_newmap
-
-
-
-
-
-
-
 
 
 
@@ -267,6 +260,7 @@ let innerText_Sechsbewertungen =  "<p><span>" + fewo.review_scores_communication
     innerText_Sechsbewertungen += "<p><span>" + fewo.review_scores_location + "</span></p>"
     innerText_Sechsbewertungen += "<p><span>" + fewo.review_scores_value + "</span></p>"
     Sechsbewertungen.innerHTML = innerText_Dreibewertungen
+
 
 function bewertungen5() {
     let divAlle = document.getElementById("bewertung")

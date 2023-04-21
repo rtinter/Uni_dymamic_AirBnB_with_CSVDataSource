@@ -154,7 +154,7 @@ function createEntdecken(data) {
         div += "<span>" + data[i]["review_scores_rating"] + " &#9733;</span>"
         div += "<p>" + data[i]["number_of_reviews"] + " Bewertungen" + "</p>"
         div += "</div> <br>"
-        anzeige.innerHTML += div
+        setTimeout(() => anzeige.innerHTML += div, 25*i )
     }
         //Seeeeehr langer String für colums1 inkl. der geparsten Werte zur jeweiligen Wohnung
 }
